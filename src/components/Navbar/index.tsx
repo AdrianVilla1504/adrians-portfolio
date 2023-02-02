@@ -1,32 +1,16 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
+import navbar from '../../services/navbar.json';
 
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
-
-  const links = [
-    {
-      id: 1,
-      link: "home",
-    },
-    {
-      id: 2,
-      link: "about",
-    },
-    {
-      id: 3,
-      link: "experience",
-    },
-    {
-      id: 4,
-      link: "contact",
-    },
-  ];
+  const content = navbar.content;
+  const links = content.links;
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black absolute">
       <div>
         <h1 className="text-5xl font-signature ml-2">Adrian Villa</h1>
       </div>
