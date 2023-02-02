@@ -11,12 +11,10 @@ const Home = () => {
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            I'm a Full Stack Developer
+            {home.content.title}
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            Full stack javascript developer, passionate about Technology and coding with the M.E.R.N stack.<br/>
-
-            I describe myself as a person that has the capacity to adapt to new technologies rapidly and find the most efficient solution to the problems and commitments related to code. I'm proactive, creative, and persistent.
+            {home.content.description}
           </p>
 
           <div>
@@ -24,9 +22,9 @@ const Home = () => {
               to="portfolio"
               smooth
               duration={500}
-              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-red-500 cursor-pointer"
             >
-              Portfolio
+              {home.content.portfolioBtn}
               <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </span>
