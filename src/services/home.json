@@ -4,8 +4,9 @@
       "url": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675338759/Portfolio/developer_adrian_villa_profile_pic_vcwspl.svg",
       "alt": "full-stack-developer-Adrian-Villa-profilePic"
     },
-    "title": "I'm a Full Stack Developer",
-    "description": "Full stack javascript developer, passionate about Technology and coding with the M.E.R.N stack.",
+    "salutation":"Hi! 👋",
+    "title": "I'm Adrian Villa",
+    "description": "A Full stack javascript developer, passionate about Technology and coding with the M.E.R.N stack.",
     "portfolioBtn":"Portfolio"
   }
 }

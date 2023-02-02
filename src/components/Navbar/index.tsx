@@ -10,7 +10,7 @@ const NavBar = () => {
   const links = content.links;
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black absolute">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
       <div>
         <h1 className="text-5xl font-signature ml-2">Adrian Villa</h1>
       </div>
@@ -26,6 +26,9 @@ const NavBar = () => {
             </Link>
           </li>
         ))}
+        <li className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200">
+          <a href={content.resume} target="_blank">Download C.V</a>
+        </li>
       </ul>
 
       <div

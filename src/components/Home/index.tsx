@@ -6,11 +6,14 @@ import home from "../../services/home.json";
 const Home = () => {
   return (
     <div
-      className="pt-[70px] h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
+      className="pt-[20px] h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
+        <div className="flex flex-col justify-center wh-full">
+          <h2 className="text-3xl sm:text-5xl font-bold text-white">
+            {home.content.salutation}
+          </h2>
+          <h2 className="text-4xl sm:text-6xl font-bold text-white">
             {home.content.title}
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
@@ -36,7 +39,7 @@ const Home = () => {
           <img
             src={home.content.profilePic.url}
             alt={home.content.profilePic.alt}
-            className="rounded-2xl mx-auto w-2/3 md:w-[500px]"
+            className="rounded-2xl w-2/3 md:w-[300px] md:ml-[60px] md:mr-[-30px]"
           />
         </div>
       </div>
