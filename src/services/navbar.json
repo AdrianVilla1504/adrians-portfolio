@@ -3,19 +3,15 @@
     "name": "Adrian Villa",
     "links" : [
       {
+        "id": 0,
+        "link": "Home"
+      },
+      {
         "id": 1,
-        "link": "home"
-      },
-      {
-        "id": 2,
-        "link": "about"
-      },
-      {
-        "id": 3,
         "link": "Technologies"
       },
       {
-        "id": 4,
+        "id": 2,
         "link": "Experience"
       }
     ],

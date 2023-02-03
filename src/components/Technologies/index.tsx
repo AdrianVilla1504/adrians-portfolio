@@ -1,8 +1,8 @@
-import React from "react";
-import technologies from "../../services/technologies.json";
+
+import techno from "../../services/technologies.json";
 
 
-const Technologies = () => {
+const Technologies = ({technologies}:any) => {
   const techs = [
     {
       id: 0,
@@ -95,18 +95,18 @@ const Technologies = () => {
       title: "Jira",
       style: "shadow-blue-500"
     }
-  ]
-  return (
-    <div
+  ];
 
+  return (
+    <div ref={technologies}
       className="bg-gradient-to-b from-gray-800 to-black w-full h-full"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
-        <div>
+        <div className="md:mb-[-40px]">
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
-            {technologies.title}
+            {techno.title}
           </p>
-          <p className="py-6">{technologies.description}</p>
+          <p className="py-6">{techno.description}</p>
         </div>
         <div className="w-full grid grid-cols-2 sm:grid-cols-5 gap-8 text-center py-8 px-12 sm:px-0">
           {techs.map(({ id, src, title, style }) => (
