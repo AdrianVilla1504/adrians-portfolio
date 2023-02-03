@@ -7,7 +7,7 @@ const Experience = ({experience}:any) => {
 
   return (
     <div ref={experience}
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-full"
+      className=" py-[10vh] bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-full"
     >
       <div className="flex flex-col max-w-screen-lg p-4 mx-auto  justify-center w-full h-full">
         <div className="pb-8 md:mb-[-65px]">

@@ -9,7 +9,7 @@ const NavBar = ({nav, setNav, scrollToSection, arrayRef}: any) => {
   const links = content.links;
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed z-50">
+    <div className="flex shadow-gray-900 justify-between items-center w-full h-20 px-4 text-white bg-black fixed z-50">
       <div>
         <h1 className="text-5xl font-signature ml-2">Adrian Villa</h1>
       </div>

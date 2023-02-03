@@ -6,7 +6,7 @@ const Home = ({scrollToSection, experience, home}: any) => {
 
   return (
     <div ref={home}
-      className="pt-[20px] h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
+      className="pt-[100px] min-[373px]:pt-[20px] px-[30px] md:px-[0px] h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center wh-full">
@@ -33,11 +33,11 @@ const Home = ({scrollToSection, experience, home}: any) => {
           </div>
         </div>
 
-        <div>
+        <div className="flex justify-center mt-[50px]">
           <img
             src={homeData.content.profilePic.url}
             alt={homeData.content.profilePic.alt}
-            className="rounded-2xl w-2/3 md:w-[300px] md:ml-[60px] md:mr-[-30px]"
+            className="rounded-2xl w-[220px] md:w-[300px] md:ml-[60px] md:mr-[-30px]"
           />
         </div>
       </div>
