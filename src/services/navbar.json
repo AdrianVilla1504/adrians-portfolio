@@ -1,0 +1,20 @@
+{
+  "content": {
+    "name": "Adrian Villa",
+    "links" : [
+      {
+        "id": 0,
+        "link": "Home"
+      },
+      {
+        "id": 1,
+        "link": "Technologies"
+      },
+      {
+        "id": 2,
+        "link": "Experience"
+      }
+    ],
+    "resume":"https://res.cloudinary.com/dkagy4g5m/image/upload/v1675463156/Portfolio/CV._Adrian_Villa_qz1npq.pdf"
+  }
+}
