@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-import React from "react";
->>>>>>> main
 import exp from "../../services/experience.json";
 
 const Experience = ({experience}:any) => {
@@ -10,17 +6,10 @@ const Experience = ({experience}:any) => {
 
   return (
     <div ref={experience}
-<<<<<<< HEAD
       className="py-[10vh] px-[20px] bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-full"
     >
       <div className="flex flex-col max-w-screen-lg p-4 mx-auto justify-center w-full h-full">
         <div className="pb-8 mb-[-50px] md:mb-[-65px]">
-=======
-      className=" py-[10vh] bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-full"
-    >
-      <div className="flex flex-col max-w-screen-lg p-4 mx-auto  justify-center w-full h-full">
-        <div className="pb-8 md:mb-[-65px]">
->>>>>>> main
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             {exp.title}
           </p>
