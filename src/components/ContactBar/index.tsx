@@ -40,7 +40,7 @@ const ContactBar = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675463156/Portfolio/CV._Adrian_Villa_qz1npq.pdf",
+      href: "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675535697/Portfolio/C.V_Adrian_Villa_tymhql.pdf",
       style: "rounded-br-md",
       download: true,
     },

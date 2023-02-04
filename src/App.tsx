@@ -5,6 +5,7 @@ import Home from './components/Home';
 import ContactBar from './components/ContactBar';
 import Technologies from './components/Technologies';
 import Experience from './components/Experience';
+import Contact from './components/Contact';
 
 function App() {
   const [nav, setNav] = useState(false);
@@ -12,8 +13,9 @@ function App() {
   const home = useRef(null);
   const technologies = useRef(null);
   const experience = useRef(null);
+  const contact = useRef(null);
 
-  const arrayRef = [home, technologies, experience];
+  const arrayRef = [home, technologies, experience, contact];
 
   const scrollToSection = (elementRef: any, mobile: any) => {
     window.scrollTo({
@@ -31,6 +33,7 @@ function App() {
       <Home scrollToSection={scrollToSection} experience={experience} home={home} />
       <Technologies technologies={technologies} />
       <Experience experience={experience} />
+      <Contact contact={contact}/>
       <ContactBar />
     </>
   );
