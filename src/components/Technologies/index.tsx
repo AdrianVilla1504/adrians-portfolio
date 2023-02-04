@@ -1,6 +1,10 @@
 
 import techno from "../../services/technologies.json";
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 const Technologies = ({technologies}:any) => {
   const techs = [
     {
@@ -101,7 +105,11 @@ const Technologies = ({technologies}:any) => {
       className="bg-gradient-to-b from-gray-800 to-black w-full h-fit py-[10vh]"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+<<<<<<< HEAD
         <div className="mb-[-30px] md:mb-[-40px]">
+=======
+        <div className="md:mb-[-40px]">
+>>>>>>> main
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
             {techno.title}
           </p>

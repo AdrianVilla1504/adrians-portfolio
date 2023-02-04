@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import { Link } from "react-scroll";
+>>>>>>> main
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import homeData from "../../services/home.json";
 
