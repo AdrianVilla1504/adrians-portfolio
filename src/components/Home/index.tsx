@@ -1,4 +1,3 @@
-import { Link } from "react-scroll";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import homeData from "../../services/home.json";
 
