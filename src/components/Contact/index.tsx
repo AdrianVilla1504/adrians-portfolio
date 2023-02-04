@@ -1,0 +1,107 @@
+import { useState } from "react";
+import Swal from "sweetalert2";
+import contactData from "../../services/contact.json"
+
+const Contact = ({ contact }: any) => {
+  const [contactWay, setContactWay] = useState<any>({})
+  const handleChange = (e: any) => {
+    setContactWay({ ...contactWay, [e.target.name]: e.target.value })
+  }
+
+  const WhatsappLink = `https://api.whatsapp.com/send?phone=573205200706&text=Message%20from%20Adrian%27s%20developer%20website.%20%0A%0A%F0%9F%93%8C%20Name%3A%20${contactWay.name}%0A%F0%9F%93%8C%20E-mail%3A%20${contactWay.email}%0A%F0%9F%93%8C%20Message%3A%20${contactWay.message}%0A%0A`;
+
+  console.log("CONTACT WAY =>", contactWay);
+
+  const validatorWpp = () => {
+    if(!contactWay.type || !contactWay.name || !contactWay.phone || !contactWay.email || !contactWay.message){
+      Swal.fire({
+        title: 'Error',
+        text: 'Some fields were not filled.',
+        icon: 'warning',
+        confirmButtonText: 'Accept',
+        confirmButtonColor: '#1BA2E1'
+      })
+    } else {
+      window.open(WhatsappLink, "_blank");
+    }
+  }
+
+  return (
+    <div
+      ref={contact}
+      className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
+    >
+      <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
+        <div className="pb-8">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+            {contactData.title}
+          </p>
+          <p className="py-6">{contactData.description}</p>
+        </div>
+
+        <div className=" flex justify-center items-center">
+          <form
+            action="https://getform.io/f/d8476449-4e14-4216-b9df-252d1835678a"
+            method="POST"
+            className=" flex flex-col w-full md:w-1/2"
+          >
+            <select
+              name="type"
+              required
+              onChange={handleChange}
+              placeholder={contactData.form.name}
+              className="p-2 mb-[20px] bg-transparent border-2 rounded-md text-white focus:outline-none"
+            >
+              <option className="p-2 bg-transparent border-2 rounded-md text-black focus:outline-none" disabled selected value="">Select contact way</option>
+              <option className="p-2 bg-transparent border-2 rounded-md text-black focus:outline-none" value="whatsapp">Whats App</option>
+              <option className="p-2 bg-transparent border-2 rounded-md text-black focus:outline-none" value="email">E-mail</option>
+            </select>
+            <input
+              type="text"
+              name="name"
+              onChange={handleChange}
+              required
+              placeholder={contactData.form.name}
+              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+            />
+            {contactWay.type === "email" ? (<input
+              type="text"
+              name="phone"
+              onChange={handleChange}
+              required
+              placeholder={contactData.form.phone}
+              className="my-4 p-2 mb-[0px] bg-transparent border-2 rounded-md text-white focus:outline-none"
+            />): <input hidden/>}
+
+            <input
+              type="email"
+              name="email"
+              onChange={handleChange}
+              required
+              placeholder={contactData.form.email}
+              className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+            />
+            <textarea
+              name="message"
+              onChange={handleChange}
+              required
+              placeholder={contactData.form.message}
+              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+            ></textarea>
+            {(contactWay.type === "whatsapp") ?
+              (<a onClick={validatorWpp} className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+                {contactData.form.submitBtn}
+              </a>) : (
+                <button type="submit" className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+                  {contactData.form.submitBtn}
+                </button>
+              )
+            }
+          </form>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;
