@@ -28,18 +28,18 @@ const Experience = ({experience}:any) => {
                 alt={title}
                 className="rounded-md duration-200 w-full hover:scale-105"
               />
-              <h3 className="text-lg py-[20px]">{title}</h3>
+              <h3 className="text-lg font-bold py-[20px]">{title}</h3>
               <div className="flex flex-col px-[30px] items-center justify-center">
                 <p className="text-justify">{description}</p>
               </div>
               <div className="flex items-center justify-center">
-                <a target="_blank" rel="noreferrer" href={liveDemo?.url} className={liveDemo?.disabled ? "hidden" : "w-1/3 cursor-pointer text-center w-1/3 px-0 py-3 m-4 duration-200 hover:scale-105"}>
+                <a target="_blank" rel="noreferrer" href={liveDemo?.url} className={liveDemo?.disabled ? "hidden" : "w-1/3 font-bold cursor-pointer text-center w-1/3 px-0 py-3 m-4 duration-200 hover:scale-105"}>
                   {exp.demoButton}
                 </a>
-                <a target="_blank" rel="noreferrer" href={BackendRepo.url} className={BackendRepo?.disabled ? "hidden" : "w-1/3	cursor-pointer text-center px-0 py-3 m-4 duration-200 hover:scale-105"}>
+                <a target="_blank" rel="noreferrer" href={BackendRepo.url} className={BackendRepo?.disabled ? "hidden" : "w-1/3	font-bold cursor-pointer text-center px-0 py-3 m-4 duration-200 hover:scale-105"}>
                   {exp.BackendRepoButton}
                 </a>
-                <a target="_blank" rel="noreferrer" href={frontEndRepo.url} className={frontEndRepo?.disabled ? "hidden" : "w-1/3	cursor-pointer text-center px-0 py-3 m-4 duration-200 hover:scale-105"}>
+                <a target="_blank" rel="noreferrer" href={frontEndRepo.url} className={frontEndRepo?.disabled ? "hidden" : "w-1/3	font-bold cursor-pointer text-center px-0 py-3 m-4 duration-200 hover:scale-105"}>
                   {exp.frontEndRepoButton}
                 </a>
               </div>
@@ -59,19 +59,19 @@ const Experience = ({experience}:any) => {
                 alt={title}
                 className="rounded-md duration-200 w-full hover:scale-105"
               />
-              <h3 className="text-lg py-[20px]">{title}</h3>
+              <h3 className="text-lg py-[20px] font-bold">{title}</h3>
               <div className="flex flex-col px-[30px] items-center justify-center">
 
                 <p className="text-justify">{description}</p>
               </div>
               <div className="flex flex-row items-center justify-center">
-                <a target="_blank" rel="noreferrer" href={liveDemo.url} className={liveDemo?.disabled ? "hidden" : "w-1/3	cursor-pointer text-center px-0 py-3 m-4 duration-200 hover:scale-105"}>
+                <a target="_blank" rel="noreferrer" href={liveDemo.url} className={liveDemo?.disabled ? "hidden" : "font-bold w-1/3	cursor-pointer text-center px-0 py-3 m-4 duration-200 hover:scale-105"}>
                   {exp.demoButton}
                 </a>
-                <a target="_blank" rel="noreferrer" href={BackendRepo.url} className={BackendRepo?.disabled ? "hidden" : "w-1/3	cursor-pointer text-center  px-0 py-3 m-4 duration-200 hover:scale-105"}>
+                <a target="_blank" rel="noreferrer" href={BackendRepo.url} className={BackendRepo?.disabled ? "hidden" : "font-bold w-1/3	cursor-pointer text-center  px-0 py-3 m-4 duration-200 hover:scale-105"}>
                   {exp.BackendRepoButton}
                 </a>
-                <a target="_blank" rel="noreferrer" href={frontEndRepo.url} className={frontEndRepo?.disabled ? "hidden" : "w-1/3	cursor-pointer text-center px-0 py-3 m-4 duration-200 hover:scale-105"}>
+                <a target="_blank" rel="noreferrer" href={frontEndRepo.url} className={frontEndRepo?.disabled ? "hidden" : "font-bold w-1/3	cursor-pointer text-center px-0 py-3 m-4 duration-200 hover:scale-105"}>
                   {exp.frontEndRepoButton}
                 </a>
               </div>

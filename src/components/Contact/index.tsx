@@ -13,7 +13,7 @@ const Contact = ({ contact }: any) => {
   console.log("CONTACT WAY =>", contactWay);
 
   const validatorWpp = () => {
-    if(!contactWay.type || !contactWay.name || !contactWay.phone || !contactWay.email || !contactWay.message){
+    if(!contactWay.type || !contactWay.name || !contactWay.email || !contactWay.message){
       Swal.fire({
         title: 'Error',
         text: 'Some fields were not filled.',
@@ -41,7 +41,7 @@ const Contact = ({ contact }: any) => {
 
         <div className=" flex justify-center items-center">
           <form
-            action="https://getform.io/f/d8476449-4e14-4216-b9df-252d1835678a"
+            action={process.env.REACT_APP_EMAIL_ENDPOINT}
             method="POST"
             className=" flex flex-col w-full md:w-1/2"
           >
