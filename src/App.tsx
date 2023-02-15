@@ -1,10 +1,4 @@
-import React, {
-  HTMLAttributeAnchorTarget,
-  MutableRefObject,
-  RefObject,
-  useRef,
-  useState,
-} from "react";
+import React, { useRef, useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -16,20 +10,21 @@ import Contact from "./components/Contact";
 function App() {
   const [nav, setNav] = useState<boolean>(false);
 
-  const home = useRef<null | HTMLParagraphElement>(null);
-  const technologies = useRef<null | HTMLParagraphElement>(null);
-  const experience = useRef<null | HTMLParagraphElement>(null);
-  const contact = useRef<null | HTMLParagraphElement>(null);
-
+  const home = useRef<null | HTMLDivElement>(null);
+  const technologies = useRef<null | HTMLDivElement>(null);
+  const experience = useRef<null | HTMLDivElement>(null);
+  const contact = useRef<null | HTMLDivElement>(null);
   const arrayRef = [home, technologies, experience, contact];
 
-  const scrollToSection = (elementRef: any, mobile: boolean) => {
+  const scrollToSection = (
+    elementRef: React.RefObject<HTMLDivElement>,
+    mobile: boolean
+  ) => {
     window.scrollTo({
-      top: elementRef.current.offsetTop,
+      top: elementRef.current?.offsetTop,
       behavior: "smooth",
     });
-    const verificator = mobile;
-    verificator && setNav(!nav);
+    mobile && setNav(!nav);
   };
 
   return (
