@@ -2,9 +2,10 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { ContactLinksObject } from "../../services/sectionTypes/contactBarTypes";
 
 const ContactBar = () => {
-  const links = [
+  const links: ContactLinksObject[] = [
     {
       id: 1,
       icon: (
@@ -14,6 +15,7 @@ const ContactBar = () => {
       ),
       href: "https://www.linkedin.com/in/adrian-villa-776783175/",
       style: "rounded-tr-md",
+      target: "_blank",
     },
     {
       id: 2,
@@ -23,15 +25,18 @@ const ContactBar = () => {
         </>
       ),
       href: "https://github.com/AdrianVilla1504",
+      target: "_blank",
     },
     {
       id: 3,
       icon: (
         <>
-          E-Mail me<HiOutlineMail size={30} />
+          E-Mail me
+          <HiOutlineMail size={30} />
         </>
       ),
       href: "mailto:adriancvilla@gmail.com",
+      target: "self",
     },
     {
       id: 4,
@@ -40,16 +45,16 @@ const ContactBar = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675535697/Portfolio/C.V_Adrian_Villa_tymhql.pdf",
+      href: "https://res.cloudinary.com/dkagy4g5m/image/upload/v1676416184/Portfolio/CV._Adrian_Villa_rb8age.pdf",
       style: "rounded-br-md",
-      download: true,
+      target: "_blank",
     },
   ];
 
   return (
     <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
       <ul>
-        {links.map(({ id, icon, href, style, download }) => (
+        {links.map(({ id, icon, href, style, target }: ContactLinksObject) => (
           <li
             key={id}
             className={
@@ -61,7 +66,7 @@ const ContactBar = () => {
             <a
               href={href}
               className="flex justify-between items-center w-full text-white"
-              target="_blank"
+              target={target}
               rel="noreferrer"
             >
               {icon}

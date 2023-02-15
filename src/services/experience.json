@@ -41,7 +41,7 @@
         }
       },
       {
-        "id": "1",
+        "id": 1,
         "title": "Skapate Hookah Bar Website",
         "description": "I collaborated in the elaboration of a website to show the services of Skapate Hooka Bar, the user could see all the services of the place, choose the language, check the product menu, and also make reservation.",
         "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675437420/Portfolio/Projects/skapate-thumbnail_pmfjd9.svg",
@@ -105,7 +105,7 @@
         }
       },
       {
-        "id": "1",
+        "id": 1,
         "title": "CRM-APP",
         "description": "The application was developed for the need of a crm for a company, it allows you to search and create contacts. Additionally, they are organized in alphabetical order, you can search by name and/or surname. A new contact can be created, and an existing contact can be updated.the application was developed for mobile view",
         "techs": [

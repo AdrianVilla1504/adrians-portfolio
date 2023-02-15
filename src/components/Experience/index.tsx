@@ -1,9 +1,13 @@
 import exp from "../../services/experience.json";
+import {
+  ExpProps,
+  Projects,
+} from "../../services/sectionTypes/experienceTypes";
 
-const Experience = ({ experience }: any) => {
-  const portfolioTeam = exp.teamwork.content;
-  const portfolioSingle = exp.mywork.content;
-
+const Experience = ({ experience }: ExpProps) => {
+  const portfolioTeam: Projects[] = exp.teamwork.content;
+  const portfolioSingle: Projects[] = exp.mywork.content;
+  console.log(typeof experience);
   return (
     <div
       ref={experience}
@@ -23,19 +27,16 @@ const Experience = ({ experience }: any) => {
 
         <div className="grid sm:grid-cols-2  gap-8 px-0 sm:px-0">
           {portfolioTeam.map(
-            (
-              {
-                id,
-                title,
-                description,
-                techs,
-                img,
-                liveDemo,
-                BackendRepo,
-                frontEndRepo,
-              },
-              index
-            ) => (
+            ({
+              id,
+              title,
+              description,
+              techs,
+              img,
+              liveDemo,
+              BackendRepo,
+              frontEndRepo,
+            }: Projects) => (
               <div
                 key={id}
                 className="flex flex-col items-center justify-around shadow-md shadow-gray-600 rounded-lg"
