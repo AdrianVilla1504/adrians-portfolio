@@ -1,10 +1,11 @@
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import homeData from "../../services/home.json";
+import { HomeProps } from "../../services/sectionTypes/homeTypes";
 
-const Home = ({scrollToSection, experience, home}: any) => {
-
+const Home = ({ scrollToSection, experience, home, nav }: HomeProps) => {
   return (
-    <div ref={home}
+    <div
+      ref={home}
       className="pt-[100px] min-[373px]:pt-[20px] px-[30px] md:px-[0px] h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
@@ -21,7 +22,9 @@ const Home = ({scrollToSection, experience, home}: any) => {
 
           <div>
             <a
-              onClick={()=>{scrollToSection(experience)}}
+              onClick={() => {
+                scrollToSection(experience, nav);
+              }}
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-red-500 cursor-pointer"
             >
               {homeData.content.portfolioBtn}

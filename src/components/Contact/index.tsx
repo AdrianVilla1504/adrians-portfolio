@@ -1,30 +1,39 @@
 import { useState } from "react";
 import Swal from "sweetalert2";
-import contactData from "../../services/contact.json"
+import contactData from "../../services/contact.json";
+import {
+  ContactProps,
+  ContactForm,
+} from "../../services/sectionTypes/contactTypes";
 
-const Contact = ({ contact }: any) => {
-  const [contactWay, setContactWay] = useState<any>({})
+const Contact = ({ contact }: ContactProps) => {
+  const [contactWay, setContactWay] = useState<ContactForm>({});
   const handleChange = (e: any) => {
-    setContactWay({ ...contactWay, [e.target.name]: e.target.value })
-  }
+    setContactWay({ ...contactWay, [e.target.name]: e.target.value });
+  };
 
   const WhatsappLink = `https://api.whatsapp.com/send?phone=573205200706&text=Message%20from%20Adrian%27s%20developer%20website.%20%0A%0A%F0%9F%93%8C%20Name%3A%20${contactWay.name}%0A%F0%9F%93%8C%20E-mail%3A%20${contactWay.email}%0A%F0%9F%93%8C%20Message%3A%20${contactWay.message}%0A%0A`;
 
   console.log("CONTACT WAY =>", contactWay);
 
   const validatorWpp = () => {
-    if(!contactWay.type || !contactWay.name || !contactWay.email || !contactWay.message){
+    if (
+      !contactWay.type ||
+      !contactWay.name ||
+      !contactWay.email ||
+      !contactWay.message
+    ) {
       Swal.fire({
-        title: 'Error',
-        text: 'Some fields were not filled.',
-        icon: 'warning',
-        confirmButtonText: 'Accept',
-        confirmButtonColor: '#1BA2E1'
-      })
+        title: "Error",
+        text: "Some fields were not filled.",
+        icon: "warning",
+        confirmButtonText: "Accept",
+        confirmButtonColor: "#1BA2E1",
+      });
     } else {
       window.open(WhatsappLink, "_blank");
     }
-  }
+  };
 
   return (
     <div
@@ -52,9 +61,26 @@ const Contact = ({ contact }: any) => {
               placeholder={contactData.form.name}
               className="p-2 mb-[20px] bg-transparent border-2 rounded-md text-white focus:outline-none"
             >
-              <option className="p-2 bg-transparent border-2 rounded-md text-black focus:outline-none" disabled selected value="">Select contact way</option>
-              <option className="p-2 bg-transparent border-2 rounded-md text-black focus:outline-none" value="whatsapp">Whats App</option>
-              <option className="p-2 bg-transparent border-2 rounded-md text-black focus:outline-none" value="email">E-mail</option>
+              <option
+                className="p-2 bg-transparent border-2 rounded-md text-black focus:outline-none"
+                disabled
+                selected
+                value=""
+              >
+                Select contact way
+              </option>
+              <option
+                className="p-2 bg-transparent border-2 rounded-md text-black focus:outline-none"
+                value="whatsapp"
+              >
+                Whats App
+              </option>
+              <option
+                className="p-2 bg-transparent border-2 rounded-md text-black focus:outline-none"
+                value="email"
+              >
+                E-mail
+              </option>
             </select>
             <input
               type="text"
@@ -64,14 +90,18 @@ const Contact = ({ contact }: any) => {
               placeholder={contactData.form.name}
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             />
-            {contactWay.type === "email" ? (<input
-              type="text"
-              name="phone"
-              onChange={handleChange}
-              required
-              placeholder={contactData.form.phone}
-              className="my-4 p-2 mb-[0px] bg-transparent border-2 rounded-md text-white focus:outline-none"
-            />): <input hidden/>}
+            {contactWay.type === "email" ? (
+              <input
+                type="text"
+                name="phone"
+                onChange={handleChange}
+                required
+                placeholder={contactData.form.phone}
+                className="my-4 p-2 mb-[0px] bg-transparent border-2 rounded-md text-white focus:outline-none"
+              />
+            ) : (
+              <input hidden />
+            )}
 
             <input
               type="email"
@@ -88,15 +118,21 @@ const Contact = ({ contact }: any) => {
               placeholder={contactData.form.message}
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             ></textarea>
-            {(contactWay.type === "whatsapp") ?
-              (<a onClick={validatorWpp} className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+            {contactWay.type === "whatsapp" ? (
+              <a
+                onClick={validatorWpp}
+                className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
+              >
                 {contactData.form.submitBtn}
-              </a>) : (
-                <button type="submit" className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
-                  {contactData.form.submitBtn}
-                </button>
-              )
-            }
+              </a>
+            ) : (
+              <button
+                type="submit"
+                className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
+              >
+                {contactData.form.submitBtn}
+              </button>
+            )}
           </form>
         </div>
       </div>

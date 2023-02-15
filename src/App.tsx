@@ -14,12 +14,13 @@ function App() {
   const technologies = useRef<null | HTMLDivElement>(null);
   const experience = useRef<null | HTMLDivElement>(null);
   const contact = useRef<null | HTMLDivElement>(null);
+
   const arrayRef = [home, technologies, experience, contact];
 
   const scrollToSection = (
     elementRef: React.RefObject<HTMLDivElement>,
     mobile: boolean
-  ) => {
+  ): void => {
     window.scrollTo({
       top: elementRef.current?.offsetTop,
       behavior: "smooth",
@@ -38,6 +39,7 @@ function App() {
       <Home
         scrollToSection={scrollToSection}
         experience={experience}
+        nav={nav}
         home={home}
       />
       <Technologies technologies={technologies} />
