@@ -3,4 +3,5 @@ export type ContactLinksObject = {
   icon: JSX.Element;
   href: string;
   style?: string;
+  target: string;
 };

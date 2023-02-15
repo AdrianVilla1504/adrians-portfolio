@@ -15,6 +15,7 @@ const ContactBar = () => {
       ),
       href: "https://www.linkedin.com/in/adrian-villa-776783175/",
       style: "rounded-tr-md",
+      target: "_blank",
     },
     {
       id: 2,
@@ -24,6 +25,7 @@ const ContactBar = () => {
         </>
       ),
       href: "https://github.com/AdrianVilla1504",
+      target: "_blank",
     },
     {
       id: 3,
@@ -34,6 +36,7 @@ const ContactBar = () => {
         </>
       ),
       href: "mailto:adriancvilla@gmail.com",
+      target: "self",
     },
     {
       id: 4,
@@ -44,13 +47,14 @@ const ContactBar = () => {
       ),
       href: "https://res.cloudinary.com/dkagy4g5m/image/upload/v1676416184/Portfolio/CV._Adrian_Villa_rb8age.pdf",
       style: "rounded-br-md",
+      target: "_blank",
     },
   ];
 
   return (
     <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
       <ul>
-        {links.map(({ id, icon, href, style }: ContactLinksObject) => (
+        {links.map(({ id, icon, href, style, target }: ContactLinksObject) => (
           <li
             key={id}
             className={
@@ -62,7 +66,7 @@ const ContactBar = () => {
             <a
               href={href}
               className="flex justify-between items-center w-full text-white"
-              target="_blank"
+              target={target}
               rel="noreferrer"
             >
               {icon}
