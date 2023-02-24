@@ -1,8 +1,10 @@
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import homeData from "../../services/home.json";
 import { HomeProps } from "../../services/sectionTypes/homeTypes";
+import { useTranslation } from "react-i18next";
 
 const Home = ({ scrollToSection, experience, home, nav }: HomeProps) => {
+  const { t, i18n } = useTranslation("home");
   return (
     <div
       ref={home}
@@ -11,13 +13,13 @@ const Home = ({ scrollToSection, experience, home, nav }: HomeProps) => {
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center wh-full">
           <h2 className="text-3xl sm:text-5xl font-bold text-white">
-            {homeData.content.salutation}
+            {t("content.salutation")}
           </h2>
           <h2 className="text-4xl sm:text-6xl font-bold text-white">
-            {homeData.content.title}
+            {t("content.title")}
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            {homeData.content.description}
+            {t("content.description")}
           </p>
 
           <div>
@@ -27,7 +29,7 @@ const Home = ({ scrollToSection, experience, home, nav }: HomeProps) => {
               }}
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-red-500 cursor-pointer"
             >
-              {homeData.content.portfolioBtn}
+              {t("content.portfolioBtn")}
               <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </span>

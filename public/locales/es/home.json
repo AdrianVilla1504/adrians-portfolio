@@ -1,0 +1,12 @@
+{
+  "content": {
+    "profilePic": {
+      "url": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675338759/Portfolio/developer_adrian_villa_profile_pic_vcwspl.svg",
+      "alt": "Desarrollador-full-stack-mern-foto-perfil-Adrian-Villa-"
+    },
+    "salutation": "Hola! 👋",
+    "title": "Soy Adrian Villa",
+    "description": "Desarrollador Full stack de Javascript/Typescript, apasionado por la tecnologia y el codigo con el stack M.E.R.N .",
+    "portfolioBtn": "Portafolio"
+  }
+}
