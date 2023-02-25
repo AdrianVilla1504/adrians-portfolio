@@ -1,0 +1,26 @@
+{
+  "content": {
+    "name": "Adrian Villa",
+    "links": [
+      {
+        "id": 0,
+        "link": "Inicio"
+      },
+      {
+        "id": 1,
+        "link": "Tecnologias"
+      },
+      {
+        "id": 2,
+        "link": "Experiencia"
+      },
+      {
+        "id": 3,
+        "link": "Contacto"
+      }
+    ],
+    "resumeTitle": "Descargar C.V",
+    "barCvTitle": "C.V",
+    "resume": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1676416184/Portfolio/CV._Adrian_Villa_rb8age.pdf"
+  }
+}

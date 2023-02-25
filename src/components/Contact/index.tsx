@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Swal from "sweetalert2";
+import { useTranslation } from "react-i18next";
 import contactData from "../../services/contact.json";
 import {
   ContactProps,
@@ -7,6 +8,22 @@ import {
 } from "../../services/sectionTypes/contactTypes";
 
 const Contact = ({ contact }: ContactProps) => {
+  const { t, i18n } = useTranslation("contact");
+  const form = {
+    contactWay: {
+      default: t("form.contactway.title"),
+      wpp: t("form.contactway.phone"),
+      mail: t("form.contactway.mail"),
+    },
+    name: t("form.name"),
+    email: t("form.email"),
+    phone: t("form.phone"),
+    message: t("form.message"),
+    submitBtn: t("form.submitBtn"),
+  };
+
+  console.log("i18n FORM => ", form);
+
   const [contactWay, setContactWay] = useState<ContactForm>({});
   const handleChange = (e: any) => {
     setContactWay({ ...contactWay, [e.target.name]: e.target.value });
@@ -43,9 +60,9 @@ const Contact = ({ contact }: ContactProps) => {
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            {contactData.title}
+            {t("title")}
           </p>
-          <p className="py-6">{contactData.description}</p>
+          <p className="py-6">{t("description")}</p>
         </div>
 
         <div className=" flex justify-center items-center">
@@ -58,7 +75,7 @@ const Contact = ({ contact }: ContactProps) => {
               name="type"
               required
               onChange={handleChange}
-              placeholder={contactData.form.name}
+              placeholder={form.contactWay.default}
               className="p-2 mb-[20px] bg-transparent border-2 rounded-md text-white focus:outline-none"
             >
               <option
@@ -67,19 +84,19 @@ const Contact = ({ contact }: ContactProps) => {
                 selected
                 value=""
               >
-                Select contact way
+                {form.contactWay.default}
               </option>
               <option
                 className="p-2 bg-transparent border-2 rounded-md text-black focus:outline-none"
                 value="whatsapp"
               >
-                Whats App
+                {form.contactWay.wpp}
               </option>
               <option
                 className="p-2 bg-transparent border-2 rounded-md text-black focus:outline-none"
                 value="email"
               >
-                E-mail
+                {form.contactWay.mail}
               </option>
             </select>
             <input
@@ -87,7 +104,7 @@ const Contact = ({ contact }: ContactProps) => {
               name="name"
               onChange={handleChange}
               required
-              placeholder={contactData.form.name}
+              placeholder={form.name}
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             />
             {contactWay.type === "email" ? (
@@ -96,7 +113,7 @@ const Contact = ({ contact }: ContactProps) => {
                 name="phone"
                 onChange={handleChange}
                 required
-                placeholder={contactData.form.phone}
+                placeholder={form.phone}
                 className="my-4 p-2 mb-[0px] bg-transparent border-2 rounded-md text-white focus:outline-none"
               />
             ) : (
@@ -108,14 +125,14 @@ const Contact = ({ contact }: ContactProps) => {
               name="email"
               onChange={handleChange}
               required
-              placeholder={contactData.form.email}
+              placeholder={form.email}
               className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             />
             <textarea
               name="message"
               onChange={handleChange}
               required
-              placeholder={contactData.form.message}
+              placeholder={form.message}
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             ></textarea>
             {contactWay.type === "whatsapp" ? (
@@ -123,14 +140,14 @@ const Contact = ({ contact }: ContactProps) => {
                 onClick={validatorWpp}
                 className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
               >
-                {contactData.form.submitBtn}
+                {form.submitBtn}
               </a>
             ) : (
               <button
                 type="submit"
                 className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
               >
-                {contactData.form.submitBtn}
+                {form.submitBtn}
               </button>
             )}
           </form>
