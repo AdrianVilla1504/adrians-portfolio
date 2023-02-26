@@ -7,6 +7,9 @@ import { useTranslation } from "react-i18next";
 
 const ContactBar = () => {
   const { t, i18n } = useTranslation("navbar");
+  const resumeURL = `https://res.cloudinary.com/dkagy4g5m/image/upload/${t(
+    "content.resumeV"
+  )}/Portfolio/${t("content.resumeId")}`;
 
   const links: ContactLinksObject[] = [
     {
@@ -48,7 +51,7 @@ const ContactBar = () => {
           {t("content.barCvTitle")} <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "https://res.cloudinary.com/dkagy4g5m/image/upload/v1676416184/Portfolio/CV._Adrian_Villa_rb8age.pdf",
+      href: resumeURL,
       style: "rounded-br-md",
       target: "_blank",
     },

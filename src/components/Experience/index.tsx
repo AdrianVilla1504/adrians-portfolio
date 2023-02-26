@@ -16,7 +16,7 @@ const Experience = ({ experience }: ExpProps) => {
   const portfolioSingle: Projects[] = t("mywork.content", {
     returnObjects: true,
   });
-  console.log(typeof experience);
+
   return (
     <div
       ref={experience}

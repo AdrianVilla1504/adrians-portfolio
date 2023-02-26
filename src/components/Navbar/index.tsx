@@ -1,10 +1,12 @@
 import { useTranslation } from "react-i18next";
 import { FaBars, FaTimes } from "react-icons/fa";
-import navbar from "../../services/navbar.json";
 import { NavProps } from "../../services/sectionTypes/navbarTypes";
 
 const NavBar = ({ nav, setNav, scrollToSection, arrayRef }: NavProps) => {
   const { t, i18n } = useTranslation("navbar");
+  const resumeURL = `https://res.cloudinary.com/dkagy4g5m/image/upload/${t(
+    "content.resumeV"
+  )}/Portfolio/${t("content.resumeId")}`;
 
   const links: { id: number; link: string }[] = t("content.links", {
     returnObjects: true,
@@ -30,7 +32,7 @@ const NavBar = ({ nav, setNav, scrollToSection, arrayRef }: NavProps) => {
           )
         )}
         <li className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200">
-          <a href={navbar.content.resume} target="_blank">
+          <a href={resumeURL} target="_blank">
             {t("content.resumeTitle")}
           </a>
         </li>
@@ -58,7 +60,7 @@ const NavBar = ({ nav, setNav, scrollToSection, arrayRef }: NavProps) => {
             )
           )}
           <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
-            <a href={navbar.content.resume} target="_blank">
+            <a href={resumeURL} target="_blank">
               {t("content.resumeTitle")}
             </a>
           </li>

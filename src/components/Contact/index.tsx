@@ -22,16 +22,12 @@ const Contact = ({ contact }: ContactProps) => {
     submitBtn: t("form.submitBtn"),
   };
 
-  console.log("i18n FORM => ", form);
-
   const [contactWay, setContactWay] = useState<ContactForm>({});
   const handleChange = (e: any) => {
     setContactWay({ ...contactWay, [e.target.name]: e.target.value });
   };
 
   const WhatsappLink = `https://api.whatsapp.com/send?phone=573205200706&text=Message%20from%20Adrian%27s%20developer%20website.%20%0A%0A%F0%9F%93%8C%20Name%3A%20${contactWay.name}%0A%F0%9F%93%8C%20E-mail%3A%20${contactWay.email}%0A%F0%9F%93%8C%20Message%3A%20${contactWay.message}%0A%0A`;
-
-  console.log("CONTACT WAY =>", contactWay);
 
   const validatorWpp = () => {
     if (
