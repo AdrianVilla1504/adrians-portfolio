@@ -3,8 +3,14 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { ContactLinksObject } from "../../services/sectionTypes/contactBarTypes";
+import { useTranslation } from "react-i18next";
 
 const ContactBar = () => {
+  const { t, i18n } = useTranslation("navbar");
+  const resumeURL = `https://res.cloudinary.com/dkagy4g5m/image/upload/${t(
+    "content.resumeV"
+  )}/Portfolio/${t("content.resumeId")}`;
+  
   const links: ContactLinksObject[] = [
     {
       id: 1,
@@ -31,7 +37,7 @@ const ContactBar = () => {
       id: 3,
       icon: (
         <>
-          E-Mail me
+          E-mail
           <HiOutlineMail size={30} />
         </>
       ),
@@ -42,10 +48,10 @@ const ContactBar = () => {
       id: 4,
       icon: (
         <>
-          Resume <BsFillPersonLinesFill size={30} />
+          {t("content.barCvTitle")} <BsFillPersonLinesFill size={30} />
         </>
-      ),
-      href: "https://res.cloudinary.com/dkagy4g5m/image/upload/v1676416184/Portfolio/CV._Adrian_Villa_rb8age.pdf",
+
+      href: resumeURL,
       style: "rounded-br-md",
       target: "_blank",
     },

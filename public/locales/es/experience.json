@@ -1,0 +1,142 @@
+{
+  "title": "Experiencia",
+  "description": "Echa un vistazo a algunos de mis trabajos aquí",
+  "demoButton": "Live Demo",
+  "frontEndRepoButton": "Front-End Repo",
+  "BackendRepoButton": "Back-End Repo",
+  "teamwork": {
+    "title": "Trabajo en equipo",
+    "titleTech": "Tecnologias",
+    "content": [
+      {
+        "id": 0,
+        "title": "Airbnb-clone",
+        "description": "Colaboré en la elaboración de un clon de la aplicación Airbnb, que contaba con la funcionalidad de agregar, eliminar y modificar espacios como 'anfitrión' después del registro y inicio de sesión. Además, permitía hacer reservas como 'usuario'.",
+        "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675436885/Portfolio/Projects/airbnb-thumbnail_ugth9g.svg",
+        "techs": [
+          "Javascript",
+          "React.js",
+          "HTML",
+          "CSS",
+          "sass",
+          "Express.js",
+          "MongoDB",
+          "Redux",
+          "Mongoose",
+          "Joi",
+          "Jwt",
+          "Heroku",
+          "Vercel"
+        ],
+        "liveDemo": {
+          "url": "https://airbnb-sage-sigma.vercel.app/",
+          "disabled": false
+        },
+        "BackendRepo": {
+          "url": "https://github.com/Jessaleem/airbnb_backend",
+          "disabled": false
+        },
+        "frontEndRepo": {
+          "url": "https://github.com/juan-diazDev/airbnb",
+          "disabled": false
+        }
+      },
+      {
+        "id": 1,
+        "title": "Skapate Hookah Bar Website",
+        "description": "Colaboré en la elaboración de un sitio web para mostrar los servicios de Skapate Hooka Bar, donde los usuarios podían ver todos los servicios del lugar, elegir el idioma, verificar el menú de productos y también hacer reservaciones.",
+        "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675437420/Portfolio/Projects/skapate-thumbnail_pmfjd9.svg",
+        "techs": [
+          "Typescript",
+          "Next.js",
+          "HTML/css",
+          "react-i18next",
+          "Swiper React"
+        ],
+        "liveDemo": {
+          "url": "https://skapatehookahbar.com/",
+          "disabled": false
+        },
+        "BackendRepo": {
+          "url": "",
+          "disabled": true
+        },
+        "frontEndRepo": {
+          "url": "",
+          "disabled": true
+        }
+      }
+    ]
+  },
+  "mywork": {
+    "title": "Trabajo individual",
+    "titleTech": "Tecnologias",
+    "content": [
+      {
+        "id": 0,
+        "title": "Burguer Factory",
+        "description": "Desarrollé una aplicación que permitiría a una empresa de comida rápida, en este caso de hamburguesas, agregar, editar, eliminar y mostrar sus productos en un menú para los 'usuarios'. Además, los 'usuarios' podían simular una compra con su costo total agregando productos al carrito de compras y modificando su cantidad.",
+        "techs": [
+          "Javascript",
+          "Next.js",
+          "Tailwinds",
+          "Express.js",
+          "MongoDB",
+          "Redux",
+          "Mongoose",
+          "Joi",
+          "Jwt",
+          "Railway",
+          "Netlify",
+          "Stripe",
+          "Sendgrid",
+          "Render"
+        ],
+        "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675436758/Portfolio/Projects/burguerf-thumbnail_x0nzfc.svg",
+        "liveDemo": {
+          "url": "https://dashing-puppy-a46657.netlify.app/",
+          "disabled": false
+        },
+        "BackendRepo": {
+          "url": "https://github.com/AdrianVilla1504/myRestaurantApp",
+          "disabled": false
+        },
+        "frontEndRepo": {
+          "url": "https://github.com/AdrianVilla1504/nextmyrestaurant",
+          "disabled": false
+        }
+      },
+      {
+        "id": 1,
+        "title": "CRM-APP",
+        "description": "La aplicación fue desarrollada para satisfacer la necesidad de un CRM para una empresa, lo que permite buscar y crear contactos. Además, están organizados en orden alfabético y se puede buscar por nombre y/o apellido. Se pueden crear nuevos contactos y actualizar contactos existentes. La aplicación fue desarrollada para vista móvil.",
+        "techs": [
+          "MongoDB",
+          "Express.js",
+          "React.js",
+          "Node.js",
+          "Tailwinds",
+          "DotEnv",
+          "CORS",
+          "Mongoose",
+          "Nodemon",
+          "Multer",
+          "Morgan"
+        ],
+        "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675437420/Portfolio/Projects/crm-thumbnail_qv5wfm.svg",
+        "liveDemo": {
+          "url": "https://wyer-crm-client.vercel.app/",
+          "disabled": false
+        },
+        "BackendRepo": {
+          "url": "https://github.com/AdrianVilla1504/wyer-crm-server",
+          "disabled": false
+        },
+        "frontEndRepo": {
+          "url": "https://github.com/AdrianVilla1504/wyer-crm-client",
+          "disabled": false
+        }
+      }
+    ]
+  }
+}

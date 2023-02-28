@@ -1,3 +1,5 @@
+import i18next from "i18next";
+import { useTranslation } from "react-i18next";
 import exp from "../../services/experience.json";
 import {
   ExpProps,
@@ -5,9 +7,17 @@ import {
 } from "../../services/sectionTypes/experienceTypes";
 
 const Experience = ({ experience }: ExpProps) => {
-  const portfolioTeam: Projects[] = exp.teamwork.content;
-  const portfolioSingle: Projects[] = exp.mywork.content;
-  console.log(typeof experience);
+
+  const { t, i18n } = useTranslation("experience");
+
+  const portfolioTeam: Projects[] = t("teamwork.content", {
+    returnObjects: true,
+  });
+
+  const portfolioSingle: Projects[] = t("mywork.content", {
+    returnObjects: true,
+  });
+
   return (
     <div
       ref={experience}
@@ -16,13 +26,13 @@ const Experience = ({ experience }: ExpProps) => {
       <div className="flex flex-col max-w-screen-lg p-4 mx-auto justify-center w-full h-full">
         <div className="pb-8 mb-[-50px] md:mb-[-65px]">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            {exp.title}
+            {t("title")}
           </p>
-          <p className="py-6">{exp.description}</p>
+          <p className="py-6">{t("description")}</p>
         </div>
 
         <div className="pb-0">
-          <h3 className="py-6 text-2xl font-bold">{exp.teamwork.title}</h3>
+          <h3 className="py-6 text-2xl font-bold">{t("teamwork.title")}</h3>
         </div>
 
         <div className="grid sm:grid-cols-2  gap-8 px-0 sm:px-0">
@@ -49,7 +59,9 @@ const Experience = ({ experience }: ExpProps) => {
                 <h3 className="text-lg font-bold py-[20px]">{title}</h3>
                 <div className="flex flex-col px-[30px] items-center justify-center">
                   <p className="text-justify">{description}</p>
-                  <h4 className="text-lg font-bold mt-[20px]">Technologies</h4>
+                  <h4 className="text-lg font-bold mt-[20px]">
+                    {t("teamwork.titleTech")}
+                  </h4>
                   <div className="mt-[10px] gap-x-6  grid w-full grid-cols-3 md:grid-cols-4   ">
                     {techs.map((tech, i) => (
                       <ul className="flex items-center">
@@ -105,7 +117,7 @@ const Experience = ({ experience }: ExpProps) => {
         </div>
 
         <div className="flex pb-0 mt-[50px]">
-          <h3 className="py-6 text-2xl font-bold ">{exp.mywork.title}</h3>
+          <h3 className="py-6 text-2xl font-bold ">{t("mywork.title")}</h3>
         </div>
 
         <div className="grid sm:grid-cols-2  gap-8 px-0 sm:px-0">
@@ -135,7 +147,9 @@ const Experience = ({ experience }: ExpProps) => {
                 <h3 className="text-lg py-[20px] font-bold">{title}</h3>
                 <div className="flex flex-col px-[30px] items-center justify-center">
                   <p className="text-justify">{description}</p>
-                  <h4 className="text-lg font-bold">Technologies</h4>
+                  <h4 className="text-lg font-bold">
+                    {t("teamwork.titleTech")}
+                  </h4>
                   <div className="mt-[10px] gap-x-6  grid w-full grid-cols-3 md:grid-cols-4">
                     {techs.map((tech, i) => (
                       <ul className="flex items-center">

@@ -1,0 +1,12 @@
+{
+  "title":"Contact",
+  "description":"Submit the form below to get in touch with me",
+  "form":{
+    "contactway":{"title":"Contact way","phone":"WhatsApp","mail":"E-mail"},
+    "name":"Enter your name or company",
+    "email":"Enter your email or company email",
+    "phone":"Enter your phone/company phone number",
+    "message":"Enter your message",
+    "submitBtn":"Get contact"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Contacto",
+  "description": "Diligencie el formulario a continuacion, para ponernos en contacto",
+  "form": {
+    "contactway": {
+      "title": "Tipo de contacto",
+      "phone": "WhatsApp",
+      "mail": "E-mail"
+    },
+    "name": "Ingrese su nombre o el de su compañia",
+    "email": "Ingrese su e-mail o el de su compañia",
+    "phone": "Ingrese su telefono o el de su compañia",
+    "message": "Ingrese su mensaje",
+    "submitBtn": "Contactar"
+  }
+}

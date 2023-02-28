@@ -8,6 +8,7 @@ export type Projects = {
   description: string;
   techs: string[];
   img: string;
+  titleTech: string;
   liveDemo: { url: string; disabled: boolean };
   BackendRepo: { url: string; disabled: boolean };
   frontEndRepo: { url: string; disabled: boolean };

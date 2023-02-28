@@ -1,10 +1,26 @@
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+
 import { FaBars, FaTimes } from "react-icons/fa";
-import navbar from "../../services/navbar.json";
+import { TbLanguage } from "react-icons/tb";
+import { AiOutlineCaretDown, AiFillCaretUp } from "react-icons/ai";
 import { NavProps } from "../../services/sectionTypes/navbarTypes";
 
 const NavBar = ({ nav, setNav, scrollToSection, arrayRef }: NavProps) => {
-  const content = navbar.content;
-  const links: { id: number; link: string }[] = content.links;
+  const { t, i18n } = useTranslation("navbar");
+  const [open, setOpen] = useState<boolean>(false);
+
+  const resumeURL = `https://res.cloudinary.com/dkagy4g5m/image/upload/${t(
+    "content.resumeV"
+  )}/Portfolio/${t("content.resumeId")}`;
+
+  const links: { id: number; link: string }[] = t("content.links", {
+    returnObjects: true,
+  });
+
+  const setLanguage = (lng: string): void => {
+    i18n.changeLanguage(lng);
+  };
 
   return (
     <div className="flex shadow-gray-900 justify-between items-center w-full h-20 px-4 text-white bg-black fixed z-50">
@@ -26,9 +42,56 @@ const NavBar = ({ nav, setNav, scrollToSection, arrayRef }: NavProps) => {
           )
         )}
         <li className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200">
-          <a href={content.resume} target="_blank">
-            Download C.V
+          <a href={resumeURL} target="_blank">
+            {t("content.resumeTitle")}
           </a>
+        </li>
+        <li className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200">
+          <button
+            className="flex flex-row items-center justify-center gap-1"
+            onClick={() => setOpen((prev) => !prev)}
+          >
+            <TbLanguage size={20} /> {t("content.language.default")}
+            {!open ? (
+              <AiOutlineCaretDown size={15} />
+            ) : (
+              <AiFillCaretUp
+                className={`${open === true ? "text-white" : "text-gray-500"} `}
+                size={15}
+              />
+            )}
+          </button>
+
+          {open && (
+            <ul className="absolute z-50 flex flex-col bg-slate-700 w-[120px] rounded-xl p-[20px]">
+              <li
+                className={`ppx-4 cursor-pointer capitalize font-medium ${
+                  i18n.language === "en" ? "text-white" : "text-gray-500"
+                } hover:scale-105 duration-200`}
+              >
+                <button
+                  onClick={(): void => {
+                    setLanguage("en");
+                  }}
+                >
+                  English
+                </button>
+              </li>
+              <li
+                className={`ppx-4 cursor-pointer capitalize font-medium ${
+                  i18n.language === "es" ? "text-white" : "text-gray-500"
+                } hover:scale-105 duration-200`}
+              >
+                <button
+                  onClick={(): void => {
+                    setLanguage("es");
+                  }}
+                >
+                  Español
+                </button>
+              </li>
+            </ul>
+          )}
         </li>
       </ul>
 
@@ -54,8 +117,8 @@ const NavBar = ({ nav, setNav, scrollToSection, arrayRef }: NavProps) => {
             )
           )}
           <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
-            <a href={content.resume} target="_blank">
-              Download C.V
+            <a href={resumeURL} target="_blank">
+              {t("content.resumeTitle")}
             </a>
           </li>
         </ul>
