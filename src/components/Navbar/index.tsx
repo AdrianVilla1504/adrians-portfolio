@@ -48,7 +48,7 @@ const NavBar = ({ nav, setNav, scrollToSection, arrayRef }: NavProps) => {
         </li>
         <li className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200">
           <button
-            className="flex flex-row items-center justify-center gap-1"
+            className="md:hidden flex flex-row items-center justify-center gap-1"
             onClick={() => setOpen((prev) => !prev)}
           >
             <TbLanguage size={20} /> {t("content.language.default")}
@@ -65,7 +65,7 @@ const NavBar = ({ nav, setNav, scrollToSection, arrayRef }: NavProps) => {
           {open && (
             <ul className="absolute z-50 flex flex-col bg-slate-700 w-[120px] rounded-xl p-[20px]">
               <li
-                className={`ppx-4 cursor-pointer capitalize font-medium ${
+                className={`md:hidden ppx-4 cursor-pointer capitalize font-medium ${
                   i18n.language === "en" ? "text-white" : "text-gray-500"
                 } hover:scale-105 duration-200`}
               >
@@ -78,7 +78,7 @@ const NavBar = ({ nav, setNav, scrollToSection, arrayRef }: NavProps) => {
                 </button>
               </li>
               <li
-                className={`ppx-4 cursor-pointer capitalize font-medium ${
+                className={`md:hidden ppx-4 cursor-pointer capitalize font-medium ${
                   i18n.language === "es" ? "text-white" : "text-gray-500"
                 } hover:scale-105 duration-200`}
               >
@@ -120,6 +120,32 @@ const NavBar = ({ nav, setNav, scrollToSection, arrayRef }: NavProps) => {
             <a href={resumeURL} target="_blank">
               {t("content.resumeTitle")}
             </a>
+          </li>
+          <li
+            className={`px-4 cursor-pointer capitalize py-6 text-4xl ${
+              i18n.language === "en" ? "text-white" : "text-gray-500"
+            }`}
+          >
+            <button
+              onClick={(): void => {
+                setLanguage("en");
+              }}
+            >
+              English
+            </button>
+          </li>
+          <li
+            className={`px-4 cursor-pointer capitalize py-6 text-4xl ${
+              i18n.language === "es" ? "text-white" : "text-gray-500"
+            }`}
+          >
+            <button
+              onClick={(): void => {
+                setLanguage("es");
+              }}
+            >
+              Español
+            </button>
           </li>
         </ul>
       )}
