@@ -1,11 +1,11 @@
 import techno from "../../services/technologies.json";
 import { TechProps, ListTech } from "../../services/sectionTypes/techsTypes";
-
 import homeData from "../../services/home.json";
 import { useTranslation } from "react-i18next";
 
 const Technologies = ({ technologies }: TechProps) => {
   const { t, i18n } = useTranslation("technologies");
+
   const techs: ListTech[] = techno.content;
   return (
     <div

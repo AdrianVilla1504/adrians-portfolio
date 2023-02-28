@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Swal from "sweetalert2";
 import { useTranslation } from "react-i18next";
+
 import contactData from "../../services/contact.json";
 import {
   ContactProps,
@@ -21,6 +22,7 @@ const Contact = ({ contact }: ContactProps) => {
     message: t("form.message"),
     submitBtn: t("form.submitBtn"),
   };
+
 
   const [contactWay, setContactWay] = useState<ContactForm>({});
   const handleChange = (e: any) => {

@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 
 const Home = ({ scrollToSection, experience, home, nav }: HomeProps) => {
   const { t, i18n } = useTranslation("home");
+
   return (
     <div
       ref={home}

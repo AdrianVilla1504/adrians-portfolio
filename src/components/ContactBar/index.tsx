@@ -10,7 +10,7 @@ const ContactBar = () => {
   const resumeURL = `https://res.cloudinary.com/dkagy4g5m/image/upload/${t(
     "content.resumeV"
   )}/Portfolio/${t("content.resumeId")}`;
-
+  
   const links: ContactLinksObject[] = [
     {
       id: 1,
@@ -50,7 +50,7 @@ const ContactBar = () => {
         <>
           {t("content.barCvTitle")} <BsFillPersonLinesFill size={30} />
         </>
-      ),
+
       href: resumeURL,
       style: "rounded-br-md",
       target: "_blank",

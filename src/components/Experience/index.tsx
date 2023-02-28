@@ -7,6 +7,7 @@ import {
 } from "../../services/sectionTypes/experienceTypes";
 
 const Experience = ({ experience }: ExpProps) => {
+
   const { t, i18n } = useTranslation("experience");
 
   const portfolioTeam: Projects[] = t("teamwork.content", {
