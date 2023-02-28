@@ -21,7 +21,12 @@
     ],
     "resumeTitle": "Descargar C.V",
     "barCvTitle": "C.V",
-    "resumeV": "v1677433260",
-    "resumeId": "C.V_Adrian_Villa_nwglmt.pdf"
+    "resumeV": "v1677542948",
+    "resumeId": "C.V_Adrian_Villa_eieisg.pdf",
+    "language": {
+      "default": "Idioma",
+      "en": "English",
+      "es": "Español"
+    }
   }
 }
