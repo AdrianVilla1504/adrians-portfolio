@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -9,6 +9,7 @@ import { NavProps } from "../../services/sectionTypes/navbarTypes";
 const NavBar = ({ nav, setNav, scrollToSection, arrayRef }: NavProps) => {
   const { t, i18n } = useTranslation("navbar");
   const [open, setOpen] = useState<boolean>(false);
+  const refLang: any = useRef(null);
 
   const resumeURL = `https://res.cloudinary.com/dkagy4g5m/image/upload/${t(
     "content.resumeV"
@@ -21,6 +22,14 @@ const NavBar = ({ nav, setNav, scrollToSection, arrayRef }: NavProps) => {
   const setLanguage = (lng: string): void => {
     i18n.changeLanguage(lng);
   };
+
+  const closeDrop = (e: any) => {
+    if (refLang.current && open && !refLang.current.contains(e.target)) {
+      setOpen(false);
+    }
+  };
+
+  document.addEventListener("mousedown", closeDrop);
 
   return (
     <div className="flex shadow-gray-900 justify-between items-center w-full h-20 px-4 text-white bg-black fixed z-50">
@@ -46,53 +55,57 @@ const NavBar = ({ nav, setNav, scrollToSection, arrayRef }: NavProps) => {
             {t("content.resumeTitle")}
           </a>
         </li>
-        <li className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200">
-          <button
-            className="md:hidden flex flex-row items-center justify-center gap-1"
-            onClick={() => setOpen((prev) => !prev)}
-          >
-            <TbLanguage size={20} /> {t("content.language.default")}
-            {!open ? (
-              <AiOutlineCaretDown size={15} />
-            ) : (
-              <AiFillCaretUp
-                className={`${open === true ? "text-white" : "text-gray-500"} `}
-                size={15}
-              />
-            )}
-          </button>
+        <div ref={refLang}>
+          <li className="sm:invisible md:visible px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200">
+            <button
+              className="flex flex-row items-center justify-center gap-1"
+              onClick={() => setOpen((prev) => !prev)}
+            >
+              <TbLanguage size={20} /> {t("content.language.default")}
+              {!open ? (
+                <AiOutlineCaretDown size={15} />
+              ) : (
+                <AiFillCaretUp
+                  className={`${
+                    open === true ? "text-white" : "text-gray-500"
+                  } `}
+                  size={15}
+                />
+              )}
+            </button>
 
-          {open && (
-            <ul className="absolute z-50 flex flex-col bg-slate-700 w-[120px] rounded-xl p-[20px]">
-              <li
-                className={`md:hidden ppx-4 cursor-pointer capitalize font-medium ${
-                  i18n.language === "en" ? "text-white" : "text-gray-500"
-                } hover:scale-105 duration-200`}
-              >
-                <button
-                  onClick={(): void => {
-                    setLanguage("en");
-                  }}
+            {open && (
+              <ul className="absolute z-50 flex flex-col bg-slate-700 w-[120px] rounded-xl p-[20px]">
+                <li
+                  className={`ppx-4 cursor-pointer capitalize font-medium ${
+                    i18n.language === "en" ? "text-white" : "text-gray-500"
+                  } hover:scale-105 duration-200`}
                 >
-                  English
-                </button>
-              </li>
-              <li
-                className={`md:hidden ppx-4 cursor-pointer capitalize font-medium ${
-                  i18n.language === "es" ? "text-white" : "text-gray-500"
-                } hover:scale-105 duration-200`}
-              >
-                <button
-                  onClick={(): void => {
-                    setLanguage("es");
-                  }}
+                  <button
+                    onClick={(): void => {
+                      setLanguage("en");
+                    }}
+                  >
+                    English
+                  </button>
+                </li>
+                <li
+                  className={`ppx-4 cursor-pointer capitalize font-medium ${
+                    i18n.language === "es" ? "text-white" : "text-gray-500"
+                  } hover:scale-105 duration-200`}
                 >
-                  Español
-                </button>
-              </li>
-            </ul>
-          )}
-        </li>
+                  <button
+                    onClick={(): void => {
+                      setLanguage("es");
+                    }}
+                  >
+                    Español
+                  </button>
+                </li>
+              </ul>
+            )}
+          </li>
+        </div>
       </ul>
 
       <div
