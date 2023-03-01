@@ -25,6 +25,7 @@ const AboutMe = ({ about }: aboutProps) => {
             <p className="text-[16px] my-4">{t("content3")}</p>
           </div>
           <div className="flex flex-col pt-[50px] md:mt-[-10px] min-[400px]:mt-[-20vw] md:flex-row items-center justify-center gap-3">
+
             <div className="h-[100%] w-[60%] min-[520px]:h-[300px] min-[520px]:z-40 w-[60%] ml-[-80px] md:ml-[0px] md:w-[80%] md:basis-1/2 flex justify-center">
               <img
                 src={aboutImg.pics.one.url}
