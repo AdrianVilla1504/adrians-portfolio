@@ -93,6 +93,7 @@ const NavBar = ({ nav, setNav, scrollToSection, arrayRef }: NavProps) => {
                   className={`ppx-4 cursor-pointer capitalize font-medium ${
                     i18n.language === "es" ? "text-white" : "text-gray-500"
                   } hover:scale-105 duration-200`}
+
                 >
                   <button
                     onClick={(): void => {
