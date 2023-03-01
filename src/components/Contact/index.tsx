@@ -23,7 +23,6 @@ const Contact = ({ contact }: ContactProps) => {
     submitBtn: t("form.submitBtn"),
   };
 
-
   const [contactWay, setContactWay] = useState<ContactForm>({});
   const handleChange = (e: any) => {
     setContactWay({ ...contactWay, [e.target.name]: e.target.value });
@@ -53,7 +52,7 @@ const Contact = ({ contact }: ContactProps) => {
   return (
     <div
       ref={contact}
-      className="w-full h-full bg-gradient-to-b from-black to-gray-800 p-4 text-white pt-[40px] md:pt-[90px]"
+      className="w-full h-[100%] bg-gradient-to-b from-black to-gray-800 p-4 text-white pt-[40px] md:pt-[90px]"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">

@@ -8,9 +8,9 @@ const AboutMe = ({ about }: aboutProps) => {
   return (
     <div
       ref={about}
-      className="h-[1250px] w-[100%] min-[373px]:pt-[70px] md:h-[720px] bg-gradient-to-b from-gray-800 to-black text-white"
+      className="h-[1350px] w-[100%] min-[373px]:pt-[70px] md:pt-[0px] md:h-[720px] bg-gradient-to-b from-gray-800 to-black text-white"
     >
-      <div className="max-w-screen-lg p-4 mx-auto md:pr-[3vw] flex flex-col justify-center w-[100%] h-full">
+      <div className="max-w-screen-lg pt-[0px] p-4 mx-auto md:pt-[0px] md:pr-[3vw] flex flex-col justify-center w-[100%] h-full">
         <div className="px-[10px] pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             {t("title")}
@@ -24,7 +24,7 @@ const AboutMe = ({ about }: aboutProps) => {
 
             <p className="text-[16px] my-4">{t("content3")}</p>
           </div>
-          <div className="flex flex-col md:mt-[-10px] min-[400px]:mt-[-20vw] md:flex-row items-center justify-center gap-3">
+          <div className="flex flex-col pt-[50px] md:mt-[-10px] min-[400px]:mt-[-20vw] md:flex-row items-center justify-center gap-3">
             <div className="h-[100%] w-[60%] min-[520px]:h-[300px] min-[520px]:z-40 w-[60%] ml-[-80px] md:ml-[0px] md:w-[80%] md:basis-1/2 flex justify-center">
               <img
                 src={aboutImg.pics.one.url}
