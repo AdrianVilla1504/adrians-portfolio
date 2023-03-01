@@ -58,10 +58,10 @@ const NavBar = ({ nav, setNav, scrollToSection, arrayRef }: NavProps) => {
         <div ref={refLang}>
           <li className="sm:invisible md:visible px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200">
             <button
-              className="flex flex-row items-center justify-center gap-1"
+              className="flex mt-[5px] flex-row items-center justify-center gap-1"
               onClick={() => setOpen((prev) => !prev)}
             >
-              <TbLanguage size={20} /> {t("content.language.default")}
+              <TbLanguage size={20} />
               {!open ? (
                 <AiOutlineCaretDown size={15} />
               ) : (
@@ -75,7 +75,7 @@ const NavBar = ({ nav, setNav, scrollToSection, arrayRef }: NavProps) => {
             </button>
 
             {open && (
-              <ul className="absolute z-50 flex flex-col bg-slate-700 w-[120px] rounded-xl p-[20px]">
+              <ul className="absolute mt-[3px] ml-[-47px] z-50 flex flex-col bg-slate-700 w-[95px] rounded-xl p-[20px]">
                 <li
                   className={`ppx-4 cursor-pointer capitalize font-medium ${
                     i18n.language === "en" ? "text-white" : "text-gray-500"
@@ -93,7 +93,6 @@ const NavBar = ({ nav, setNav, scrollToSection, arrayRef }: NavProps) => {
                   className={`ppx-4 cursor-pointer capitalize font-medium ${
                     i18n.language === "es" ? "text-white" : "text-gray-500"
                   } hover:scale-105 duration-200`}
-
                 >
                   <button
                     onClick={(): void => {
