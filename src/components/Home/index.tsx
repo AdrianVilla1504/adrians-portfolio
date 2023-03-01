@@ -42,7 +42,7 @@ const Home = ({ scrollToSection, experience, home, nav }: HomeProps) => {
           <img
             src={homeData.content.profilePic.url}
             alt={homeData.content.profilePic.alt}
-            className="rounded-2xl w-[220px] md:w-[300px] md:ml-[60px] md:mr-[-30px]"
+            className="rounded-2xl w-[220px] md:w-[300px] md:ml-[10px] min-[840px]:ml-[60px] md:mr-[-30px]"
           />
         </div>
       </div>

@@ -42,7 +42,7 @@ const NavBar = ({ nav, setNav, scrollToSection, arrayRef }: NavProps) => {
           ({ id, link }: { id: number; link: string }, index: number) => (
             <li
               key={id}
-              className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200"
+              className="px-4 cursor-pointer font-medium text-gray-500 hover:scale-105 duration-200"
             >
               <a onClick={() => scrollToSection(arrayRef[index], false)}>
                 {link}

@@ -6,16 +6,18 @@ import ContactBar from "./components/ContactBar";
 import Technologies from "./components/Technologies";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
+import AboutMe from "./components/AboutMe";
 
 function App() {
   const [nav, setNav] = useState<boolean>(false);
 
   const home = useRef<null | HTMLDivElement>(null);
+  const about = useRef<null | HTMLDivElement>(null);
   const technologies = useRef<null | HTMLDivElement>(null);
   const experience = useRef<null | HTMLDivElement>(null);
   const contact = useRef<null | HTMLDivElement>(null);
 
-  const arrayRef = [home, technologies, experience, contact];
+  const arrayRef = [home, technologies, experience, about, contact];
 
   const scrollToSection = (
     elementRef: React.RefObject<HTMLDivElement>,
@@ -44,6 +46,7 @@ function App() {
       />
       <Technologies technologies={technologies} />
       <Experience experience={experience} />
+      <AboutMe about={about} />
       <Contact contact={contact} />
       <ContactBar />
     </>

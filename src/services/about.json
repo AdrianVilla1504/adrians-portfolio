@@ -1,0 +1,12 @@
+{
+  "pics": {
+    "one": {
+      "alt": "react-developer-profile-pic",
+      "url": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1677690446/Portfolio/aboutme-1_zfh3c4.jpg"
+    },
+    "two": {
+      "alt": "react-developer-profile-pic",
+      "url": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1677690453/Portfolio/aboutme-2_ifgc1k.jpg"
+    }
+  }
+}
