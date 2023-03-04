@@ -5,19 +5,19 @@ import { AiOutlineCaretDown, AiFillCaretUp } from "react-icons/ai";
 import { TbLanguage } from "react-icons/tb";
 import { NavFullProps } from "../../services/sectionTypes/navbarTypes";
 
-function NavbarFullScreen(
-  {
-    refLang,
-    open,
-    setOpen,
-    links,
-    scrollToSection,
-    resumeURL,
-    arrayRef,
-    setLanguage,
-    nowRef,
-  }: any /* NavFullProps */
-) {
+
+function NavbarFullScreen({
+  refLang,
+  open,
+  setOpen,
+  links,
+  scrollToSection,
+  resumeURL,
+  arrayRef,
+  setLanguage,
+  nowRef,
+}: NavFullProps) {
+
   const { t, i18n } = useTranslation("navbar");
 
   return (

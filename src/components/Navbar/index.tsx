@@ -9,9 +9,14 @@ import { NavProps } from "../../services/sectionTypes/navbarTypes";
 import NavbarMobile from "../../subcomponents/navbarMobile/index";
 import NavbarFullScreen from "../../subcomponents/navbarFullScreen";
 
-const NavBar = (
-  { nav, setNav, scrollToSection, arrayRef, nowRef }: any /* NavProps */
-) => {
+const NavBar = ({
+  nav,
+  setNav,
+  scrollToSection,
+  arrayRef,
+  nowRef,
+}: NavProps) => {
+
   const { t, i18n } = useTranslation("navbar");
   const [open, setOpen] = useState<boolean>(false);
   const refLang = useRef<HTMLDivElement>(null);
@@ -56,7 +61,7 @@ const NavBar = (
 
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
+        className="cursor-pointer pr-[0px] z-10 text-gray-500 md:hidden"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
@@ -69,6 +74,7 @@ const NavBar = (
             links={links}
             arrayRef={arrayRef}
             setLanguage={setLanguage}
+            nowRef={nowRef}
           />
         </>
       )}
