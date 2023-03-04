@@ -9,7 +9,9 @@ import { NavProps } from "../../services/sectionTypes/navbarTypes";
 import NavbarMobile from "../../subcomponents/navbarMobile/index";
 import NavbarFullScreen from "../../subcomponents/navbarFullScreen";
 
-const NavBar = ({ nav, setNav, scrollToSection, arrayRef }: NavProps) => {
+const NavBar = (
+  { nav, setNav, scrollToSection, arrayRef, nowRef }: any /* NavProps */
+) => {
   const { t, i18n } = useTranslation("navbar");
   const [open, setOpen] = useState<boolean>(false);
   const refLang = useRef<HTMLDivElement>(null);
@@ -49,6 +51,7 @@ const NavBar = ({ nav, setNav, scrollToSection, arrayRef }: NavProps) => {
         links={links}
         arrayRef={arrayRef}
         setLanguage={setLanguage}
+        nowRef={nowRef}
       />
 
       <div
