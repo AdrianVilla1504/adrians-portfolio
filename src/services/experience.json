@@ -64,6 +64,31 @@
           "url": "",
           "disabled": true
         }
+      },
+      {
+        "id": 2,
+        "title": "Backoom Website",
+        "description": "I collaborated in the elaboration of a website to show the products of Backoom “Tornilleria ceritificada” , the user could see all the products, and ask for the price of them after choosed in a cart.",
+        "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675437420/Portfolio/Projects/skapate-thumbnail_pmfjd9.svg",
+        "techs": [
+          "Typescript",
+          "Next.js",
+          "HTML/css",
+          "react-pagination",
+          "react-cookie"
+        ],
+        "liveDemo": {
+          "url": "https://backoom.com/",
+          "disabled": false
+        },
+        "BackendRepo": {
+          "url": "",
+          "disabled": true
+        },
+        "frontEndRepo": {
+          "url": "",
+          "disabled": true
+        }
       }
     ]
   },

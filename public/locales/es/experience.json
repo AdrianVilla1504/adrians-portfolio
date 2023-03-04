@@ -51,10 +51,36 @@
           "Next.js",
           "HTML/css",
           "react-i18next",
-          "Swiper React"
+          "Swiper React",
+          "react-cookie"
         ],
         "liveDemo": {
           "url": "https://skapatehookahbar.com/",
+          "disabled": false
+        },
+        "BackendRepo": {
+          "url": "",
+          "disabled": true
+        },
+        "frontEndRepo": {
+          "url": "",
+          "disabled": true
+        }
+      },
+      {
+        "id": 2,
+        "title": "Backoom Website",
+        "description": "Colaboré en el desarrollo de un sitio web para mostrar los productos de “Tornilleria ceritificada” de Backoom. El usuario podía ver todos los servicios y productos en un menú de navegación categorizado y solicitar sus precios a través de WhatsApp después de seleccionarlos en un carrito",
+        "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1677911139/Portfolio/Projects/backoom_lhdtdd.svg",
+        "techs": [
+          "Typescript",
+          "Next.js",
+          "HTML/css",
+          "react-pagination",
+          "react-cookie"
+        ],
+        "liveDemo": {
+          "url": "https://backoom.com/",
           "disabled": false
         },
         "BackendRepo": {
