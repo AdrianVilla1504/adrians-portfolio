@@ -7,9 +7,11 @@ import Technologies from "./components/Technologies";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import AboutMe from "./components/AboutMe";
+import { act } from "react-dom/test-utils";
 
 function App() {
   const [nav, setNav] = useState<boolean>(false);
+  const [nowRef, setNowRef] = useState<any>();
 
   const home = useRef<null | HTMLDivElement>(null);
   const about = useRef<null | HTMLDivElement>(null);
@@ -28,6 +30,7 @@ function App() {
       behavior: "smooth",
     });
     mobile && setNav(!nav);
+    setNowRef(elementRef);
   };
 
   return (
@@ -37,6 +40,7 @@ function App() {
         setNav={setNav}
         scrollToSection={scrollToSection}
         arrayRef={arrayRef}
+        nowRef={nowRef}
       />
       <Home
         scrollToSection={scrollToSection}
