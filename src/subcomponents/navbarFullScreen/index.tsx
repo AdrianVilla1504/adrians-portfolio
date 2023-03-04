@@ -5,6 +5,7 @@ import { AiOutlineCaretDown, AiFillCaretUp } from "react-icons/ai";
 import { TbLanguage } from "react-icons/tb";
 import { NavFullProps } from "../../services/sectionTypes/navbarTypes";
 
+
 function NavbarFullScreen({
   refLang,
   open,
@@ -16,6 +17,7 @@ function NavbarFullScreen({
   setLanguage,
   nowRef,
 }: NavFullProps) {
+
   const { t, i18n } = useTranslation("navbar");
 
   return (

@@ -16,6 +16,7 @@ const NavBar = ({
   arrayRef,
   nowRef,
 }: NavProps) => {
+
   const { t, i18n } = useTranslation("navbar");
   const [open, setOpen] = useState<boolean>(false);
   const refLang = useRef<HTMLDivElement>(null);
