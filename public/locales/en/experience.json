@@ -65,6 +65,31 @@
           "url": "",
           "disabled": true
         }
+      },
+      {
+        "id": 2,
+        "title": "Backoom Website",
+        "description": "I collaborated in the development of a website to showcase Backoom's “Tornilleria ceritificada” products. The user could view all the services and products in a categorized navigation menu and request their prices via WhatsApp after selecting them in a cart.",
+        "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1677911139/Portfolio/Projects/backoom_lhdtdd.svg",
+        "techs": [
+          "Typescript",
+          "Next.js",
+          "HTML/css",
+          "react-pagination",
+          "react-cookie"
+        ],
+        "liveDemo": {
+          "url": "https://backoom.com/",
+          "disabled": false
+        },
+        "BackendRepo": {
+          "url": "",
+          "disabled": true
+        },
+        "frontEndRepo": {
+          "url": "",
+          "disabled": true
+        }
       }
     ]
   },
