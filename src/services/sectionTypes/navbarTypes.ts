@@ -6,6 +6,7 @@ export type NavProps = {
     mobile: boolean
   ) => void;
   arrayRef: React.RefObject<HTMLDivElement>[];
+  nowRef: React.RefObject<HTMLDivElement>;
 };
 
 export type NavMobileProps = {
@@ -17,6 +18,7 @@ export type NavMobileProps = {
   resumeURL: string;
   arrayRef: React.RefObject<HTMLDivElement>[];
   setLanguage: (lng: string) => void;
+  nowRef: React.RefObject<HTMLDivElement>;
 };
 
 export type NavFullProps = {
@@ -31,4 +33,5 @@ export type NavFullProps = {
   resumeURL: string;
   arrayRef: React.RefObject<HTMLDivElement>[];
   setLanguage: (lng: string) => void;
+  nowRef: React.RefObject<HTMLDivElement>;
 };
