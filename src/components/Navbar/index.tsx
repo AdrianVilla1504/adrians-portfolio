@@ -16,14 +16,11 @@ const NavBar = ({
   arrayRef,
   nowRef,
 }: NavProps) => {
-
   const { t, i18n } = useTranslation("navbar");
   const [open, setOpen] = useState<boolean>(false);
   const refLang = useRef<HTMLDivElement>(null);
 
-  const resumeURL = `https://res.cloudinary.com/dkagy4g5m/image/upload/${t(
-    "content.resumeV"
-  )}/Portfolio/${t("content.resumeId")}`;
+  const resumeURL = `https://res.cloudinary.com/dkagy4g5m/image/upload/v1693872991/C.V_Adrian_Villa_dgjm73.pdf`;
 
   const links: { id: number; link: string }[] = t("content.links", {
     returnObjects: true,
