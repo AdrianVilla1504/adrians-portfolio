@@ -10,9 +10,6 @@ import AboutMe from "./components/AboutMe";
 import { act } from "react-dom/test-utils";
 
 function App() {
-  const [nav, setNav] = useState<boolean>(false);
-  const [nowRef, setNowRef] = useState<any>();
-
   const home = useRef<null | HTMLDivElement>(null);
   const about = useRef<null | HTMLDivElement>(null);
   const technologies = useRef<null | HTMLDivElement>(null);
@@ -20,6 +17,9 @@ function App() {
   const contact = useRef<null | HTMLDivElement>(null);
 
   const arrayRef = [home, technologies, experience, about, contact];
+ 
+  const [nav, setNav] = useState<boolean>(false);
+  const [nowRef, setNowRef] = useState<any>(home);
 
   const scrollToSection = (
     elementRef: React.RefObject<HTMLDivElement>,

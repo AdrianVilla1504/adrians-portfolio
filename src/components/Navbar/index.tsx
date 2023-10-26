@@ -20,7 +20,7 @@ const NavBar = ({
   const [open, setOpen] = useState<boolean>(false);
   const refLang = useRef<HTMLDivElement>(null);
 
-  const resumeURL = `https://res.cloudinary.com/dkagy4g5m/image/upload/v1693872991/C.V_Adrian_Villa_dgjm73.pdf`;
+  const resumeURL = `${t("content.resume")}`;
 
   const links: { id: number; link: string }[] = t("content.links", {
     returnObjects: true,

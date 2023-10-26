@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaGitlab } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { ContactLinksObject } from "../../services/sectionTypes/contactBarTypes";
@@ -7,9 +7,7 @@ import { useTranslation } from "react-i18next";
 
 const ContactBar = () => {
   const { t, i18n } = useTranslation("navbar");
-  const resumeURL = `https://res.cloudinary.com/dkagy4g5m/image/upload/${t(
-    "content.resumeV"
-  )}/Portfolio/${t("content.resumeId")}`;
+  const resumeURL = `${t("content.resume")}`;
 
   const links: ContactLinksObject[] = [
     {
@@ -27,6 +25,16 @@ const ContactBar = () => {
       id: 2,
       icon: (
         <>
+          Gitlab <FaGitlab size={30} />
+        </>
+      ),
+      href: "https://gitlab.com/AdrianVilla15041",
+      target: "_blank",
+    },
+    {
+      id: 3,
+      icon: (
+        <>
           GitHub <FaGithub size={30} />
         </>
       ),
@@ -34,7 +42,7 @@ const ContactBar = () => {
       target: "_blank",
     },
     {
-      id: 3,
+      id: 4,
       icon: (
         <>
           E-mail
@@ -45,7 +53,7 @@ const ContactBar = () => {
       target: "self",
     },
     {
-      id: 4,
+      id: 5,
       icon: (
         <>
           {t("content.barCvTitle")} <BsFillPersonLinesFill size={30} />
