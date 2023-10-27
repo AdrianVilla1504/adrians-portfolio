@@ -40,115 +40,116 @@
     },
     {
       "id": 6,
+      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698288284/Portfolio/Technologies/Meteor_wf9dua.png",
+      "title": "Meteor",
+      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
+    },
+    {
+      "id": 7,
       "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675362223/Portfolio/Technologies/tailwind_dpoz6r.png",
       "title": "Tailwinds",
       "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-sky-400"
     },
     {
-      "id": 7,
+      "id": 8,
+      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698288281/Portfolio/Technologies/Bootstrap_ciz32b.svg",
+      "title": "Bootstrap",
+      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
+    },
+    {
+      "id": 9,
+      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698288283/Portfolio/Technologies/Material_UI_bhs0ph.png",
+      "title": "Material UI",
+      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
+    },
+    {
+      "id": 10,
       "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675365060/Portfolio/Technologies/nodejs_la2qjn.png",
       "title": "Node.js",
       "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-green-400"
     },
     {
-      "id": 8,
+      "id": 11,
       "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675364494/Portfolio/Technologies/expressjs_qrsdk3.png",
       "title": "Express.js",
       "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-gray-400"
     },
     {
-      "id": 9,
+      "id": 12,
+      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698288279/Portfolio/Technologies/NestJS_hhptwv.svg",
+      "title": "Nest.js",
+      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
+    },
+    {
+      "id": 13,
       "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675365522/Portfolio/Technologies/git_a6o1uf.png",
       "title": "Git",
       "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-orange-500"
     },
     {
-      "id": 10,
+      "id": 14,
       "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675362222/Portfolio/Technologies/gitlab_aajxaq.png",
       "title": "GitLab",
       "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-orange-400"
     },
     {
-      "id": 11,
+      "id": 15,
       "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675362222/Portfolio/Technologies/github_ppwirt.png",
       "title": "GitHub",
       "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-gray-400"
     },
     {
-      "id": 12,
+      "id": 16,
       "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675366314/Portfolio/Technologies/npm_nka7ll.png",
       "title": "NPM",
       "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-red-400"
     },
     {
-      "id": 13,
-      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675366856/Portfolio/Technologies/scrum_kp6hcc.png",
-      "title": "Scrum",
-      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-400"
-    },
-    {
-      "id": 14,
-      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675366314/Portfolio/Technologies/jira_g3q5dc.png",
-      "title": "Jira",
-      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
-    },
-    {
-      "id": 15,
-      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698287366/Portfolio/Technologies/stripe_svugit.png",
-      "title": "Stripe",
-      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
-    },
-    {
-      "id": 16,
-      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698287365/Portfolio/Technologies/Bootstrap_jbylwh.svg",
-      "title": "Bootstrap",
-      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
-    },
-    {
       "id": 17,
-      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698287364/Portfolio/Technologies/Microsoft_Azure_ppau6d.svg",
-      "title": "Azure",
-      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
-    },
-    {
-      "id": 18,
-      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698287364/Portfolio/Technologies/NestJS_he8baa.svg",
-      "title": "Nest",
-      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
-    },
-    {
-      "id": 19,
-      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698287363/Portfolio/Technologies/Digital_Ocean_hi9x2f.svg",
-      "title": "Digital Ocean",
-      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
-    },
-    {
-      "id": 20,
-      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698287364/Portfolio/Technologies/Material_UI_zao4zj.png",
-      "title": "Material UI",
-      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
-    },
-    {
-      "id": 21,
-      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698287363/Portfolio/Technologies/PM2_vgfwid.svg",
-      "title": "PM2",
-      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
-    },
-    {
-      "id": 22,
       "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698287062/Portfolio/Technologies/Yarn_dxkeub.svg",
       "title": "Yarn",
       "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
     },
     {
+      "id": 18,
+      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675366856/Portfolio/Technologies/scrum_kp6hcc.png",
+      "title": "Scrum",
+      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-400"
+    },
+    {
+      "id": 19,
+      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675366314/Portfolio/Technologies/jira_g3q5dc.png",
+      "title": "Jira",
+      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
+    },
+    {
+      "id": 20,
+      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698288278/Portfolio/Technologies/stripe_f3ugy7.png",
+      "title": "Stripe",
+      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
+    },
+    
+    {
+      "id": 21,
+      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698288281/Portfolio/Technologies/Azure_sai3mm.svg",
+      "title": "Azure",
+      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
+    },
+    {
+      "id": 22,
+      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698288282/Portfolio/Technologies/Digital_Ocean_chtwcw.svg",
+      "title": "Digital Ocean",
+      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
+    },
+    {
       "id": 23,
-      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698287364/Portfolio/Technologies/Meteor_gqi9ul.png",
-      "title": "Meteor",
+      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698288279/Portfolio/Technologies/PM2_y0fi3l.svg",
+      "title": "PM2",
       "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
     },
     {
       "id": 24,
-      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698287363/Portfolio/Technologies/S3_vzjof8.svg",
+      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698288280/Portfolio/Technologies/S3_hcqafl.svg",
       "title": "AWS S3",
       "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
     }
