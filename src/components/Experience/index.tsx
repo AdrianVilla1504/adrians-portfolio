@@ -62,7 +62,7 @@ const Experience = ({ experience }: ExpProps) => {
                   <h4 className="text-lg font-bold mt-[20px]">
                     {t("teamwork.titleTech")}
                   </h4>
-                  <div className="mt-[10px] gap-x-6  grid w-full grid-cols-3 md:grid-cols-4   ">
+                  <div className="mt-[10px] ml-[-40px] gap-x-[50px]  grid w-full grid-cols-3 md:grid-cols-4  md:ml-[0px] md:gap-x-[30px]">
                     {techs.map((tech, i) => (
                       <ul className="flex items-center">
                         <li>⭐</li>
@@ -150,7 +150,7 @@ const Experience = ({ experience }: ExpProps) => {
                   <h4 className="text-lg font-bold">
                     {t("teamwork.titleTech")}
                   </h4>
-                  <div className="mt-[10px] gap-x-6  grid w-full grid-cols-3 md:grid-cols-4">
+                  <div className="mt-[10px] ml-[-40px] gap-x-[50px]  grid w-full grid-cols-3 md:grid-cols-4  md:ml-[0px] md:gap-x-[30px]">
                     {techs.map((tech, i) => (
                       <ul className="flex items-center">
                         <li>⭐</li>
