@@ -123,13 +123,6 @@
       "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
     },
     {
-      "id": 20,
-      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698288278/Portfolio/Technologies/stripe_f3ugy7.png",
-      "title": "Stripe",
-      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
-    },
-    
-    {
       "id": 21,
       "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698288281/Portfolio/Technologies/Azure_sai3mm.svg",
       "title": "Azure",
@@ -151,6 +144,24 @@
       "id": 24,
       "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698288280/Portfolio/Technologies/S3_hcqafl.svg",
       "title": "AWS S3",
+      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
+    },
+    {
+      "id": 25,
+      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698288280/Portfolio/Technologies/EC2_ylqz9v.svg",
+      "title": "Cordova",
+      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
+    },
+    {
+      "id": 26,
+      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698288280/Portfolio/Technologies/RDS_wnzv9v.svg",
+      "title": "JQuery",
+      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
+    },
+    {
+      "id": 27,
+      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698288280/Portfolio/Technologies/Route_53_ylqz9v.svg",
+      "title": "Docker",
       "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
     }
   ]

@@ -10,8 +10,70 @@
     "content": [
       {
         "id": 0,
+        "title": "EatCloud",
+        "description": "Colaboro en el desarrollo, mantenimiento e implementación de las aplicaciones web de la compañia Eatcloud, incluido backend, frontend y los servidores (Arquitectura en la nube y DevOps).",
+        "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1741183677/Portfolio/Projects/eiholi5e3sukc8p7ewkx.png",
+        "techs": [
+          "Javascript",
+          "Typescript",
+          "Tailwinds",
+          "Next.js",
+          "Node.js",
+          "Microsoft Azure",
+          "MySql",
+          "Sequelize",
+          "Jquery",
+          "Azure",
+          "FTP Servers",
+          "Github Actions"
+        ],
+        "liveDemo": {
+          "url": "https://www.eatcloud.com/",
+          "disabled": false
+        },
+        "BackendRepo": {
+          "url": "",
+          "disabled": true
+        },
+        "frontEndRepo": {
+          "url": "",
+          "disabled": true
+        }
+      },
+      {
+        "id": 1,
+        "title": "EatCloud Beneficiarios",
+        "description":  "Colaboro en el desarrollo, mantenimiento e implementación de las aplicaciones moviles de la compañia Eatcloud",
+        "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1741183677/Portfolio/Projects/sdpizh3lkqos8dk5zjdj.png",
+        "techs": [
+          "Javascript",
+          "Typescript",
+          "Tailwinds",
+          "Expo",
+          "Apache Cordova",
+          "Jquery",
+          "Google Play Console",
+          "Azure",
+          "FTP Servers",
+          "Github"
+        ],
+        "liveDemo": {
+          "url": "https://play.google.com/store/search?q=Eatcloud&c=apps&hl=es_419",
+          "disabled": false
+        },
+        "BackendRepo": {
+          "url": "",
+          "disabled": true
+        },
+        "frontEndRepo": {
+          "url": "",
+          "disabled": true
+        }
+      },
+      {
+        "id": 2,
         "title": "Tab bot assistant",
-        "description": "Colaboro en el desarrollo, mantenimiento e implementación de Tab Bot (y su aplicacion de soporte), la cual señales de tendencia y gestión de trading para mercados financieros, incluyendo índices sintéticos en Deriv.com, todo ello con un enfoque sólido en la gestión de riesgos.",
+        "description": "Colaboré en el desarrollo, mantenimiento e implementación de Tab Bot (y su aplicacion de soporte), la cual señales de tendencia y gestión de trading para mercados financieros, incluyendo índices sintéticos en Deriv.com, todo ello con un enfoque sólido en la gestión de riesgos.",
         "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698366964/Portfolio/Projects/Tab_bot_assistant_uikuzs.png",
         "techs": [
           "Javascript",
@@ -39,7 +101,7 @@
         }
       },
       {
-        "id": 1,
+        "id": 3,
         "title": "Bault.io",
         "description": "Contribuyo en el mejoramiento, desarrollo de nuevos features, mantenimiento y correcto despliegue de Bault (y su aplicacion de soporte), una aplicación que permite comprar y vender BTC o USDT de manera segura.",
         "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698366965/Portfolio/Projects/Bault_bmlhmj.png",
@@ -69,7 +131,7 @@
         }
       },
       {
-        "id": 2,
+        "id": 4,
         "title": "Criptomatch",
         "description": "Contribuyo al mejoramiento, desarrollo de nuevas características, mantenimiento y despliegue adecuado de Criptomatch (y su aplicación de soporte), una plataforma de intercambio P2P de BTC.",
         "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698366965/Portfolio/Projects/Criptomatch_haz5ds.png",
@@ -103,7 +165,7 @@
         }
       },
       {
-        "id": 3,
+        "id": 5,
         "title": "Backoom Website",
         "description": "I collaborated in the development of a website to showcase Backoom's “Tornilleria ceritificada” products. The user could view all the services and products in a categorized navigation menu and request their prices via WhatsApp after selecting them in a cart.",
         "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1677911139/Portfolio/Projects/backoom_lhdtdd.svg",
@@ -128,7 +190,7 @@
         }
       },
       {
-        "id": 4,
+        "id": 6,
         "title": "Airbnb-clone",
         "description": "Colaboré en la elaboración de un clon de la aplicación Airbnb, que contaba con la funcionalidad de agregar, eliminar y modificar espacios como 'anfitrión' después del registro y inicio de sesión. Además, permitía hacer reservas como 'usuario'.",
         "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675436885/Portfolio/Projects/airbnb-thumbnail_ugth9g.svg",
@@ -161,7 +223,7 @@
         }
       },
       {
-        "id": 5,
+        "id": 7,
         "title": "Skapate Hookah Bar Website",
         "description": "Colaboré en la elaboración de un sitio web para mostrar los servicios de Skapate Hooka Bar, donde los usuarios podían ver todos los servicios del lugar, elegir el idioma, verificar el menú de productos y también hacer reservaciones.",
         "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675437420/Portfolio/Projects/skapate-thumbnail_pmfjd9.svg",
@@ -187,7 +249,7 @@
         }
       },
       {
-        "id": 2,
+        "id": 8,
         "title": "Backoom Website",
         "description": "Colaboré en el desarrollo de un sitio web para mostrar los productos de “Tornilleria ceritificada” de Backoom. El usuario podía ver todos los servicios y productos en un menú de navegación categorizado y solicitar sus precios a través de WhatsApp después de seleccionarlos en un carrito",
         "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1677911139/Portfolio/Projects/backoom_lhdtdd.svg",

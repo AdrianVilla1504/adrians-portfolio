@@ -10,8 +10,70 @@
     "content": [
       {
         "id": 0,
+        "title": "EatCloud",
+        "description": "I collaborate in the development, maintenance, and implementation of Eatcloud's web applications, including backend, frontend, and servers (Cloud architecture and DevOps).",
+        "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1741183677/Portfolio/Projects/eiholi5e3sukc8p7ewkx.png",
+        "techs": [
+          "Javascript",
+          "Typescript",
+          "Tailwinds",
+          "Next.js",
+          "Node.js",
+          "Microsoft Azure",
+          "MySql",
+          "Sequelize",
+          "Jquery",
+          "Azure",
+          "FTP Servers",
+          "Github Actions"
+        ],
+        "liveDemo": {
+          "url": "https://tab-bot-assistant.com/",
+          "disabled": false
+        },
+        "BackendRepo": {
+          "url": "",
+          "disabled": true
+        },
+        "frontEndRepo": {
+          "url": "",
+          "disabled": true
+        }
+      },
+      {
+        "id": 1,
+        "title": "EatCloud Beneficiarios",
+        "description": "I collaborate in the development, maintenance, and implementation of Eatcloud's mobile applications",
+        "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1741183677/Portfolio/Projects/sdpizh3lkqos8dk5zjdj.png",
+        "techs": [
+          "Javascript",
+          "Typescript",
+          "Tailwinds",
+          "Expo",
+          "Apache Cordova",
+          "Jquery",
+          "Google Play Console",
+          "Azure",
+          "FTP Servers",
+          "Github"
+        ],
+        "liveDemo": {
+          "url": "https://tab-bot-assistant.com/",
+          "disabled": false
+        },
+        "BackendRepo": {
+          "url": "",
+          "disabled": true
+        },
+        "frontEndRepo": {
+          "url": "",
+          "disabled": true
+        }
+      },
+      {
+        "id": 2,
         "title": "Tab bot assistant",
-        "description": "I assist in developing new features, maintenance, and deploying Tab Bot (and it's support application), which provides trend signals and trading management for financial markets, including synthetic indices. It caters to both beginners and experienced traders, offering manual and automatic operations with robust risk management.",
+        "description": "I assisted in developing new features, maintenance, and deploying Tab Bot (and it's support application), which provides trend signals and trading management for financial markets, including synthetic indices. It caters to both beginners and experienced traders, offering manual and automatic operations with robust risk management.",
         "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698366964/Portfolio/Projects/Tab_bot_assistant_uikuzs.png",
         "techs": [
           "Javascript",
@@ -39,9 +101,9 @@
         }
       },
       {
-        "id": 1,
+        "id": 3,
         "title": "Bault.io",
-        "description": "I contribute to the improvement, development of new features, maintenance, and proper deployment of Bault (and it's support application), an application that allows for the safe buying and selling of BTC or USDT.",
+        "description": "I contributed to the improvement, development of new features, maintenance, and proper deployment of Bault (and it's support application), an application that allows for the safe buying and selling of BTC or USDT.",
         "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698366965/Portfolio/Projects/Bault_bmlhmj.png",
         "techs": [
           "Javascript",
@@ -69,9 +131,9 @@
         }
       },
       {
-        "id": 2,
+        "id": 4,
         "title": "Criptomatch",
-        "description": "I contribute to the improvement, development of new features, maintenance, and proper deployment of Criptomatch (and it's support application), a P2P BTC exchange platform",
+        "description": "I contributed to the improvement, development of new features, maintenance, and proper deployment of Criptomatch (and it's support application), a P2P BTC exchange platform",
         "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698366965/Portfolio/Projects/Criptomatch_haz5ds.png",
         "techs": [
           "Javascript",
@@ -103,7 +165,7 @@
         }
       },
       {
-        "id": 3,
+        "id": 5,
         "title": "Backoom Website",
         "description": "I collaborated in the development of a website to showcase Backoom's “Tornilleria ceritificada” products. The user could view all the services and products in a categorized navigation menu and request their prices via WhatsApp after selecting them in a cart.",
         "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1677911139/Portfolio/Projects/backoom_lhdtdd.svg",
@@ -128,7 +190,7 @@
         }
       },
       {
-        "id": 4,
+        "id": 6,
         "title": "Airbnb-clone",
         "description": "I collaborated in the elaboration of a clone of the application Airbnb, which had the functionality of adding, deleting, and modifying spaces as a 'host' after registration and sign-in. Also, to make reservations as a 'user'.",
         "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675436885/Portfolio/Projects/airbnb-thumbnail_ugth9g.svg",
@@ -161,7 +223,7 @@
         }
       },
       {
-        "id": 5,
+        "id": 7,
         "title": "Skapate Hookah Bar Website",
         "description": "I collaborated in the elaboration of a website to show the services of Skapate Hooka Bar, the user could see all the services of the place, choose the language, check the product menu, and also make reservation.",
         "img": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1675437420/Portfolio/Projects/skapate-thumbnail_pmfjd9.svg",
