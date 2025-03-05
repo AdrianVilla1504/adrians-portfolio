@@ -18,6 +18,7 @@ const ContactBar = () => {
         </>
       ),
       href: "https://www.linkedin.com/in/adrian-villa-776783175/",
+      href2: null,
       style: "rounded-tr-md",
       target: "_blank",
     },
@@ -29,6 +30,7 @@ const ContactBar = () => {
         </>
       ),
       href: "https://gitlab.com/AdrianVilla15041",
+      href2: null,
       target: "_blank",
     },
     {
@@ -38,7 +40,8 @@ const ContactBar = () => {
           GitHub <FaGithub size={30} />
         </>
       ),
-      href: "https://github.com/AdrianVilla1504",
+      href: "https://github.com/AdrianVillaEatcloud",
+      href2: null,
       target: "_blank",
     },
     {
@@ -50,6 +53,7 @@ const ContactBar = () => {
         </>
       ),
       href: "mailto:adriancvilla@gmail.com",
+      href2: null,
       target: "self",
     },
     {
@@ -60,6 +64,7 @@ const ContactBar = () => {
         </>
       ),
       href: resumeURL,
+      href2: null,
       style: "rounded-br-md",
       target: "_blank",
     },
@@ -68,7 +73,7 @@ const ContactBar = () => {
   return (
     <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
       <ul>
-        {links.map(({ id, icon, href, style, target }: ContactLinksObject) => (
+        {links.map(({ id, icon, href, href2, style, target }: ContactLinksObject) => (
           <li
             key={id}
             className={
