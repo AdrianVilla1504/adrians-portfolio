@@ -149,8 +149,26 @@
     },
     {
       "id": 24,
-      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1698288280/Portfolio/Technologies/S3_hcqafl.svg",
-      "title": "AWS S3",
+      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1743208642/Portfolio/Technologies/AWS_mlanwr.png",
+      "title": "AWS",
+      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
+    },
+    {
+      "id": 25,
+      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1743209616/Portfolio/Technologies/Cordova_wqoxfc.png",
+      "title": "Apache Cordova",
+      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
+    },
+    {
+      "id": 26,
+      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1743209615/Portfolio/Technologies/Jquery_qbai8j.png",
+      "title": "JQuery",
+      "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
+    },
+    {
+      "id": 27,
+      "src": "https://res.cloudinary.com/dkagy4g5m/image/upload/v1743209614/Portfolio/Technologies/Docker_zbmmfn.png",
+      "title": "Docker",
       "style": "shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500"
     }
   ]
